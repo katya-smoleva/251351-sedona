@@ -32,22 +32,26 @@
            <div class="filter">
                <div class="filter-left">
                    <form action="#" method="get" class="infrastructure">
-                       <p class="infrastructure-title">Инфраструктура:</p>
-                       <input type="checkbox" id="infrastructure-1" name="pool" value="pool" checked>
-                       <label for="infrastructure-1">Бассейн</label>
-                       <input type="checkbox" id="infrastructure-2" name="parking" value="parking">
-                       <label for="infrastructure-2">Парковка</label>\<input type="checkbox" id="infrastructure-3" name="wi-fi" value="wi-fi">
-                       <label for="infrastructure-3">Wi-fi</label>
+                       <fieldset>
+                           <legend>Инфраструктура:</legend>
+                           <input type="checkbox" id="infrastructure-1" name="pool" value="pool" checked>
+                           <label for="infrastructure-1">Бассейн</label>
+                           <input type="checkbox" id="infrastructure-2" name="parking" value="parking">
+                           <label for="infrastructure-2">Парковка</label><input type="checkbox" id="infrastructure-3" name="wi-fi" value="wi-fi">
+                           <label for="infrastructure-3">Wi-fi</label>
+                       </fieldset>
                    </form>
                    
                    <form action="#" method="get" class="housing">
-                       <p class="housing-title">Тип жилья:</p>
-                       <input type="checkbox" id="housing-1" name="hotel" value="hotel" checked>
-                       <label for="housing-1">Гостиница</label>
-                       <input type="checkbox" id="housing-2" name="motel" value="motel" checked>
-                       <label for="housing-2">Мотель</label>
-                       <input type="checkbox" id="housing-3" name="apartments" value="apartments" checked>
-                       <label for="housing-3">Апартаменты</label>
+                       <fieldset>
+                           <legend>Тип жилья:</legend>
+                           <input type="checkbox" id="housing-1" name="hotel" value="hotel" checked>
+                           <label for="housing-1">Гостиница</label>
+                           <input type="checkbox" id="housing-2" name="motel" value="motel" checked>
+                           <label for="housing-2">Мотель</label>
+                           <input type="checkbox" id="housing-3" name="apartments" value="apartments" checked>
+                           <label for="housing-3">Апартаменты</label>
+                       </fieldset>
                    </form>
                </div>
                <div class="filter-right">
@@ -81,15 +85,21 @@
                       <a href="#">По рейтингу</a>
                   </li>
               </ul>
+              <div class="sorting-controls">
+                  <a class="arrow ascending" href="#"></a>
+                  <a class="arrow descending down" href="#"></a>
+              </div>
           </div>
           <div class="housing-items">
               <div class="housing-item">
-                  <img src="#" alt="Amara Resort & Spa">
+                  <figure>
+                      <img src="#" alt="Amara Resort & Spa">
+                  </figure>
                   <div class="housing-item-description">
                       <a href="#" class="housing-item-title">Amara Resort & Spa</a>
                       <div class="housing-item-text">
-                          <p>Гостиница</p>
-                          <p>от 3500 р.</p>
+                          <span>Гостиница</span>
+                          <span>от 3500 р.</span>
                       </div>
                       <p class="housing-item-btns">
                           <a href="#" class="item-btn-details">Подробнее</a>
@@ -97,16 +107,24 @@
                       </p>
                   </div>
                   <div class="housing-rating">
+                      <div class="rating-stars">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                      </div>
                       <p class="rating-text">Рейтинг: 8,5</p>
                   </div>
               </div>
               <div class="housing-item">
-                  <img src="#" alt="Desert Quail Inn">
+                  <figure>
+                      <img src="#" alt="Desert Quail Inn">
+                  </figure>
                   <div class="housing-item-description">
                       <a href="#" class="housing-item-title">Desert Quail Inn</a>
                       <div class="housing-item-text">
-                          <p>Мотель</p>
-                          <p>от 2000 р.</p>
+                          <span>Мотель</span>
+                          <span>от 2000 р.</span>
                       </div>
                       <p class="housing-item-btns">
                           <a href="#" class="item-btn-details">Подробнее</a>
@@ -114,16 +132,22 @@
                       </p>
                   </div>
                   <div class="housing-rating">
+                      <div class="rating-stars">
+                          <span></span>
+                          <span></span>
+                      </div>
                       <p class="rating-text">Рейтинг: 8,9</p>
                   </div>
               </div>
               <div class="housing-item">
-                  <img src="#" alt="Villas at Poco Diablo">
+                  <figure>
+                      <img src="#" alt="Villas at Poco Diablo">
+                  </figure>
                   <div class="housing-item-description">
                       <a href="#" class="housing-item-title">Villas at Poco Diablo</a>
                       <div class="housing-item-text">
-                          <p>Апартаменты</p>
-                          <p>от 4000 р.</p>
+                          <span>Апартаменты</span>
+                          <span>от 4000 р.</span>
                       </div>
                       <p class="housing-item-btns">
                           <a href="#" class="item-btn-details">Подробнее</a>
@@ -131,6 +155,11 @@
                       </p>
                   </div>
                   <div class="housing-rating">
+                      <div class="rating-stars">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                      </div>
                       <p class="rating-text">Рейтинг: 9,2</p>
                   </div>
               </div>

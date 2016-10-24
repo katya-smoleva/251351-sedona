@@ -5,18 +5,15 @@
     <title>Седона</title>
   </head>
   <body>
+      <div class="shadow">
       <header class="main-header">
-          <div class="container">
               <nav class="main-navigation">
                   <ul>
                       <li>
-                          <a href="index.html">Информация</a>
+                          <a href="#">Информация</a>
                       </li>
                       <li>
                           <a href="#">Фото и видео</a>
-                      </li>
-                      <li>
-                          <a href="index.html">Логотип</a>
                       </li>
                       <li>
                           <a href="#">Карта штата</a>
@@ -26,9 +23,11 @@
                       </li>
                   </ul>
               </nav>
+          <div class="logo">
+              <a href="index.html">Логотип</a>
           </div>
       </header>
-      <main class="container">
+      <main>
           <div class="welcome">
               <img src="#" alt="">
           </div>
@@ -38,57 +37,67 @@
           </div>
           <div class="advantages">
               <div class="advantages-left">
-                  <p class="advantages-left-title">Настоящий городок</p>
-                  <p class="advantages-left-number">№1</p>
-                  <p class="advantages-left-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                  <div class="city">
+                      <h2 class="advantages-left-title">Настоящий городок</h2>
+                      <span class="advantages-left-number">№1</span>
+                      <h3 class="advantages-left-text">Седона не аттракцион для туристов, там течет своя жизнь</h3>
+                  </div>
               </div>
               <div class="advantages-right">
-                  <div class="advantages-img">
+                  <div class="advantages-city-img">
                       <img src="#" alt="Седона - настоящий городок">
                   </div>
               </div>
           </div>
           <div class="comfort">
               <div class="comfort-left">
-                  <p class="comfort-left-title">Жилье</p>
-                  <p class="comfort-left-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  <h2 class="comfort-title">Жилье</h2>
+                  <h3 class="comfort-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</h3>
               </div>
               <div class="comfort-center">
-                  <p class="comfort-center-title">Еда</p>
-                  <p class="comfort-center-text">Всегда заказывая фирменный бургер, Вы не разочаруетесь!</p>
+                  <h2 class="comfort-title">Еда</h2>
+                  <h3 class="comfort-text">Всегда заказывая фирменный бургер, Вы не разочаруетесь!</h3>
               </div>
               <div class="comfort-right">
-                  <p class="comfort-right-title">Сувениры</p>
-                  <p class="comfort-right-text">Не только китайского, но и местного производства!</p>
+                  <h2 class="comfort-title">Сувениры</h2>
+                  <h3 class="comfort-text">Не только китайского, но и местного производства!</h3>
               </div>
           </div>
           <div class="advantages">
               <div class="advantages-left">
-                  <div class="advantages-img">
+                  <div class="advantages-bridge-img">
                       <img src="#" alt="Мост дьявола">
                   </div>
               </div>
               <div class="advantages-right">
-                  <p class="advantages-right-title">Там есть мост дьявола</p>
-                  <p class="advantages-right-number">№2</p>
-                  <p class="advantages-right-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                  <div class="bridge">
+                      <h2 class="advantages-right-title">Там есть мост дьявола</h2>
+                      <span class="advantages-right-number">№2</span>
+                      <h3 class="advantages-right-text">Да, по нему можно пройти! Если конечно вы осмелитесь</h3>
+                  </div>
               </div>
           </div>
           <div class="advantages">
               <div class="advantages-left">
-                  <p class="advantages-left-title">Небольшая площадь</p>
-                  <p class="advantages-left-number">№3</p>
-                  <p class="advantages-left-text">Все достопримечательности находятся очень близко</p>
+                  <div class="area">
+                      <h2 class="advantages-left-title">Небольшая площадь</h2>
+                      <span class="advantages-left-number">№3</span>
+                      <h3 class="advantages-left-text">Все достопримечательности находятся очень близко</h3>
+                  </div>
               </div>
               <div class="advantages-center">
-                  <p class="advantages-center-title">Красивая дорога</p>
-                  <p class="advantages-center-number">№4</p>
-                  <p class="advantages-center-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                  <div class="road">
+                      <h2 class="advantages-center-title">Красивая дорога</h2>
+                      <span class="advantages-center-number">№4</span>
+                      <h3 class="advantages-center-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</h3>
+                  </div> 
               </div>
               <div class="advantages-right">
-                  <p class="advantages-right-title">Мало туристов</p>
-                  <p class="advantages-right-number">№5</p>
-                  <p class="advantages-right-text">Большинство едет в Гранд Каньон и толпится там</p>
+                  <div class="tourists">
+                      <h2 class="advantages-right-title">Мало туристов</h2>
+                      <span class="advantages-right-number">№5</span>
+                      <h3 class="advantages-right-text">Большинство едет в Гранд Каньон и толпится там</h3>
+                  </div>
               </div>
           </div>
           <div class="search">
@@ -96,43 +105,45 @@
               <p class="search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </div>
           <form action="#" method="get" class="reservation">
-              <h2 class="reservation-title">Поиск гостиницы в Седоне</h2><div class="reservation-content">
+              <fieldset>
+                  <legend>Поиск гостиницы в Седоне</legend>
+                  <div class="reservation-content">
+                      
+                      <label for="checkin">Дата заезда:</label>
+                      <input type="text" id="checkin" class="date-input" value="24 апреля 2015">
+                      
+                      <label for="checkout">Дата выезда:</label>
+                      <input type="text" id="checkout" class="date-input" value="4 июля 2015">
               
-              <label for="checkin">Дата заезда:</label>
-              <input type="text" id="checkin" class="date-input" value="24 апреля 2015">
-              
-              <label for="checkout">Дата выезда:</label>
-              <input type="text" id="checkout" class="date-input" value="4 июля 2015">
-              
-              <label for="adults">Взрослые:</label>
-              <a class="reservation-minus" href="#">-</a>
-              <input class="people-number" id="adults" type="text" pattern="[0-9]*" value="2" min="0">
-              <a class="reservation-plus" href="#">+</a>
+                      <label for="adults">Взрослые:</label>
+                      <a class="reservation-minus" href="#">-</a>
+                      <input class="people-number" id="adults" type="text" pattern="[0-9]*" value="2" min="0">
+                      <a class="reservation-plus" href="#">+</a>
                         
-              <label for="children">Дети:</label>
-              <a class="reservation-minus" href="#">-</a>
-              <input class="people-number" id="children" type="text" pattern="[0-9]*" value="0" min="0">
-              <a class="reservation-plus" href="#">+</a>
+                      <label for="children">Дети:</label>
+                      <a class="reservation-minus" href="#">-</a>
+                      <input class="people-number" id="children" type="text" pattern="[0-9]*" value="0" min="0">
+                      <a class="reservation-plus" href="#">+</a>
               
-              <input type="submit" value="Найти" disabled>
-              </div>
+                      <input type="submit" value="Найти" disabled>
+                  </div>
+              </fieldset>
           </form>
       </main>
       <footer class="main-footer">
-          <div class="container">
-              <section class="footer-contacts">
+              <div class="footer-contacts">
                   <a class="footer-contacts" href="#">#Visitsedona</a>
-              </section>
-              <section>
+              </div>
+              <div>
                   <a class="social-btn-tw" href="#">Твиттер</a>
                   <a class="social-btn-fb" href="#">Фейсбук</a>
                   <a class="social-btn-yt" href="#">Youtube</a>
-              </section>
-              <section class="footer-copyright">
+              </div>
+              <div class="footer-copyright">
                   <p>Website by</p>
                   <a class="btn" href="https://htmlacademy.ru">html academy</a>
-              </section>
-          </div>
+              </div>
       </footer>
+      </div>
   </body>
 </html>
