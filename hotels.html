@@ -5,8 +5,9 @@
     <title>Седона</title>
   </head>
   <body>
-      <header class="main-header">
-          <div class="container">
+      <!--Тень-->
+      <div class="container"> 
+          <header class="main-header">
               <nav class="main-navigation">
                   <ul>
                       <li>
@@ -16,9 +17,6 @@
                           <a href="#">Фото и видео</a>
                       </li>
                       <li>
-                          <a href="index.html">Логотип</a>
-                      </li>
-                      <li>
                           <a href="#">Карта штата</a>
                       </li>
                       <li>
@@ -26,160 +24,191 @@
                       </li>
                   </ul>
               </nav>
-          </div>
-      </header>
-      <main class="container">
-           <div class="filter">
-               <div class="filter-left">
-                   <form action="#" method="get" class="infrastructure">
-                       <fieldset>
-                           <legend>Инфраструктура:</legend>
-                           <input type="checkbox" id="infrastructure-1" name="pool" value="pool" checked>
-                           <label for="infrastructure-1">Бассейн</label>
-                           <input type="checkbox" id="infrastructure-2" name="parking" value="parking">
-                           <label for="infrastructure-2">Парковка</label><input type="checkbox" id="infrastructure-3" name="wi-fi" value="wi-fi">
-                           <label for="infrastructure-3">Wi-fi</label>
-                       </fieldset>
-                   </form>
-                   
-                   <form action="#" method="get" class="housing">
-                       <fieldset>
-                           <legend>Тип жилья:</legend>
-                           <input type="checkbox" id="housing-1" name="hotel" value="hotel" checked>
-                           <label for="housing-1">Гостиница</label>
-                           <input type="checkbox" id="housing-2" name="motel" value="motel" checked>
-                           <label for="housing-2">Мотель</label>
-                           <input type="checkbox" id="housing-3" name="apartments" value="apartments" checked>
-                           <label for="housing-3">Апартаменты</label>
-                       </fieldset>
-                   </form>
-               </div>
-               <div class="filter-right">
-                   <p class="price-title">Стоимость в сутки (р):</p>
-                   <div class="price-control">
-                       <p class="price-from">
-                           <label for="price-from">от</label>
-                           <input class="min-price" id="price-from" type="number" value="0" min="0" max="5000" pattern="[0-9]*">
-                       </p>
-                       <p class="price-to">
-                           <label for="price-to">до</label>
-                           <input class="max-price" id="price-to" type="number" value="3000" min="0" max="5000" pattern="[0-9]*">
-                       </p>            
-                   </div>
-                   <a class="btn" href="#">Показать</a>
-               </div>
-          </div>
-          <div class="results">
-              <p class="results-title">Найдено: 
-                  <span class="quantity">3</span>
-              </p>
-              <p class="sorting">Сортировка:</p>
-              <ul class="sorting-list">
-                  <li>
-                      <a href="#">По цене</a>
-                  </li>
-                  <li>
-                      <a href="#">По типу</a>
-                  </li>
-                  <li>
-                      <a href="#">По рейтингу</a>
-                  </li>
-              </ul>
-              <div class="sorting-controls">
-                  <a class="arrow ascending" href="#"></a>
-                  <a class="arrow descending down" href="#"></a>
+              <!--end main-navigation-->
+              <div class="logo">
+                  <a href="index.html">Логотип</a>
               </div>
-          </div>
-          <div class="housing-items">
-              <div class="housing-item">
-                  <figure>
-                      <img src="#" alt="Amara Resort & Spa">
-                  </figure>
-                  <div class="housing-item-description">
-                      <a href="#" class="housing-item-title">Amara Resort & Spa</a>
-                      <div class="housing-item-text">
-                          <span>Гостиница</span>
-                          <span>от 3500 р.</span>
-                      </div>
-                      <p class="housing-item-btns">
-                          <a href="#" class="item-btn-details">Подробнее</a>
-                          <a href="#" class="item-btn-reservations">Забронировать</a>
-                      </p>
+              <!--end logo-->
+          </header>
+          <!--end header-->
+          <main>
+              <div class="filter">
+                  <div class="filter-left">
+                      <form action="#" method="get" class="infrastructure">
+                          <fieldset>
+                              <legend>Инфраструктура:</legend>
+                              <input type="checkbox" id="pool" name="pool" value="pool" checked>
+                              <label for="pool">Бассейн</label>
+                              <input type="checkbox" id="parking" name="parking" value="parking">
+                              <label for="parking">Парковка</label>
+                              <input type="checkbox" id="wi-fi" name="wi-fi" value="wi-fi">
+                              <label for="wi-fi">Wi-fi</label>
+                          </fieldset>
+                      </form>
+                      <!--end form-->                      
+                      <form action="#" method="get" class="housing">
+                          <fieldset>
+                              <legend>Тип жилья:</legend>
+                              <input type="checkbox" id="hotel" name="hotel" value="hotel" checked>
+                              <label for="hotel">Гостиница</label>
+                              <input type="checkbox" id="motel" name="motel" value="motel" checked>
+                              <label for="motel">Мотель</label>
+                              <input type="checkbox" id="apartments" name="apartments" value="apartments" checked>
+                              <label for="apartments">Апартаменты</label>
+                          </fieldset>
+                      </form>
+                      <!--end form--> 
                   </div>
-                  <div class="housing-rating">
-                      <div class="rating-stars">
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                          <span></span>
+                  <!--end filter-left-->
+                  <div class="filter-right">
+                      <p class="price-title">Стоимость в сутки (р):</p>
+                      <div class="price-control">
+                          <p class="price-from">
+                              <label for="price-from">от</label>
+                              <input class="min-price" id="price-from" type="number" value="0" min="0" max="5000" pattern="[0-9]*">
+                          </p>
+                          <p class="price-to">
+                              <label for="price-to">до</label>
+                              <input class="max-price" id="price-to" type="number" value="3000" min="0" max="5000" pattern="[0-9]*">
+                          </p>
                       </div>
-                      <p class="rating-text">Рейтинг: 8,5</p>
+                      <!--end price-control-->
+                      <a class="btn" href="#">Показать</a>
                   </div>
+                  <!--end filter-right-->
               </div>
-              <div class="housing-item">
-                  <figure>
-                      <img src="#" alt="Desert Quail Inn">
-                  </figure>
-                  <div class="housing-item-description">
-                      <a href="#" class="housing-item-title">Desert Quail Inn</a>
-                      <div class="housing-item-text">
-                          <span>Мотель</span>
-                          <span>от 2000 р.</span>
-                      </div>
-                      <p class="housing-item-btns">
-                          <a href="#" class="item-btn-details">Подробнее</a>
-                          <a href="#" class="item-btn-reservations">Забронировать</a>
-                      </p>
+              <!--end filter-->
+              <div class="results">
+                  <p class="results-title">Найдено:
+                      <span class="quantity">3</span>
+                  </p>
+                  <p class="sorting">Сортировка:</p>
+                  <ul class="sorting-list">
+                      <li>
+                          <a href="#">По цене</a>
+                      </li>
+                      <li>
+                          <a href="#">По типу</a>
+                      </li>
+                      <li>
+                          <a href="#">По рейтингу</a>
+                      </li>
+                  </ul>
+                  <div class="sorting-controls">
+                      <a class="arrow ascending" href="#"></a>
+                      <a class="arrow descending down" href="#"></a>
                   </div>
-                  <div class="housing-rating">
-                      <div class="rating-stars">
-                          <span></span>
-                          <span></span>
-                      </div>
-                      <p class="rating-text">Рейтинг: 8,9</p>
-                  </div>
+                  <!--end sorting-controls-->
               </div>
-              <div class="housing-item">
-                  <figure>
-                      <img src="#" alt="Villas at Poco Diablo">
-                  </figure>
-                  <div class="housing-item-description">
-                      <a href="#" class="housing-item-title">Villas at Poco Diablo</a>
-                      <div class="housing-item-text">
-                          <span>Апартаменты</span>
-                          <span>от 4000 р.</span>
+              <!--end results-->
+              <div class="housing-items">
+                  <div class="housing-item">
+                      <figure>
+                          <img src="#" alt="Amara Resort & Spa">
+                      </figure>
+                      <div class="housing-item-description">
+                          <a href="#" class="housing-item-title">Amara Resort & Spa</a>
+                          <div class="housing-item-text">
+                              <span>Гостиница</span>
+                              <span>от 3500 р.</span>
+                          </div>
+                          <!--end housing-item-text-->
+                          <p class="housing-item-btns">
+                              <a href="#" class="item-btn-details">Подробнее</a>
+                              <a href="#" class="item-btn-reservations">Забронировать</a>
+                          </p>
                       </div>
-                      <p class="housing-item-btns">
-                          <a href="#" class="item-btn-details">Подробнее</a>
-                          <a href="#" class="item-btn-reservations">Забронировать</a>
-                      </p>
-                  </div>
-                  <div class="housing-rating">
-                      <div class="rating-stars">
-                          <span></span>
-                          <span></span>
-                          <span></span>
+                      <!--end housing-item-description-->
+                      <div class="housing-rating">
+                          <div class="rating-stars">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                          </div>
+                          <!--end rating-stars-->
+                          <p class="rating-text">Рейтинг: 8,5</p>
                       </div>
-                      <p class="rating-text">Рейтинг: 9,2</p>
+                      <!--end housing-rating-->
                   </div>
+                  <!--end housing-item-->
+                  <div class="housing-item">
+                      <figure>
+                          <img src="#" alt="Desert Quail Inn">
+                      </figure>
+                      <div class="housing-item-description">
+                          <a href="#" class="housing-item-title">Desert Quail Inn</a>
+                          <div class="housing-item-text">
+                              <span>Мотель</span>
+                              <span>от 2000 р.</span>
+                          </div>
+                          <!--end housing-item-text-->
+                          <p class="housing-item-btns">
+                              <a href="#" class="item-btn-details">Подробнее</a>
+                              <a href="#" class="item-btn-reservations">Забронировать</a>
+                          </p>
+                      </div>
+                      <!--end housing-item-description-->
+                      <div class="housing-rating">
+                          <div class="rating-stars">
+                              <span></span>
+                              <span></span>
+                          </div>
+                          <!--end rating-stars-->
+                          <p class="rating-text">Рейтинг: 8,9</p>
+                      </div>
+                      <!--end housing-rating-->
+                  </div>
+                  <!--end housing-item-->
+                  <div class="housing-item">
+                      <figure>
+                          <img src="#" alt="Villas at Poco Diablo">
+                      </figure>
+                      <div class="housing-item-description">
+                          <a href="#" class="housing-item-title">Villas at Poco Diablo</a>
+                          <div class="housing-item-text">
+                              <span>Апартаменты</span>
+                              <span>от 4000 р.</span>
+                          </div>
+                          <!--end housing-item-text-->
+                          <p class="housing-item-btns">
+                              <a href="#" class="item-btn-details">Подробнее</a>
+                              <a href="#" class="item-btn-reservations">Забронировать</a>
+                          </p>
+                      </div>
+                      <!--end housing-item-description-->
+                      <div class="housing-rating">
+                          <div class="rating-stars">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                          </div>
+                          <!--end rating-stars-->
+                          <p class="rating-text">Рейтинг: 9,2</p>
+                      </div>
+                      <!--end housing-rating-->
+                  </div>
+                  <!--end housing-item-->
               </div>
-          </div>                   
-      </main>
-      <footer class="main-footer">
-          <div class="container">
-              <section class="footer-contacts">
+              <!--end housing-items-->
+          </main>
+          <!--end main-->
+          <footer class="main-footer">
+              <div class="footer-contacts">
                   <a class="footer-contacts" href="#">#Visitsedona</a>
-              </section>
-              <section>
+              </div>
+              <div>
                   <a class="social-btn-tw" href="#">Твиттер</a>
                   <a class="social-btn-fb" href="#">Фейсбук</a>
                   <a class="social-btn-yt" href="#">Youtube</a>
-              </section>
-              <section class="footer-copyright">
+              </div>
+              <div class="footer-copyright">
                   <p>Website by</p>
                   <a class="btn" href="https://htmlacademy.ru">html academy</a>
-              </section>
-          </div>
-      </footer>
+              </div>
+          </footer>
+          <!--end footer-->
+      </div>
+      <!--end container(Тень)-->
   </body>
 </html>
