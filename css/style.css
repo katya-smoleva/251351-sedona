@@ -17,18 +17,18 @@ body {
     clear: both;
 }
 
-.main-navigation {
-    float: left;
-    width: 1056px;
+.main-header {
     min-height: 50px;
+}
+
+.main-navigation li{
+    float: left;
 }
 
 .logo {
     float: left;
-    width: 140px;
-    min-height: 70px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
+    display: none;
 }
 
 .welcome {
@@ -37,40 +37,27 @@ body {
 }
 
 .promo {
-    width: 512px;
-    min-height: 116px;
-    margin-right: auto;
-    margin-left: auto; 
+    text-align: center;
 }
 
 .advantages-city-discription {
     float: left;
     width: 400px;
     min-height: 255px;
+    text-align: center;
 }
 
 .advantages-city-img {
-    float: right;
+    float: left;
     width: 800px;
     min-height: 255px;
 }
 
-.comfort-left {
+.comfort-item {
     float: left;
     width: 400px;
     min-height: 330px;
-}
-
-.comfort-center {
-    float: left;
-    width: 400px;
-    min-height: 330px;
-}
-
-.comfort-right {
-    float: right;
-    width: 400px;
-    min-height: 330px;
+    text-align: center;
 }
 
 .advantages-bridge-img {
@@ -80,37 +67,47 @@ body {
 }
 
 .advantages-bridge-discription {
-    float: right;
-    width: 400px;
-    min-height: 255px;
-}
-
-.advantages-left {
     float: left;
     width: 400px;
     min-height: 255px;
+    text-align: center;
 }
 
-.advantages-center {
+.advantages-item {
     float: left;
     width: 400px;
     min-height: 255px;
+    text-align: center;
 }
 
-.advantages-right {
-    float: right;
-    width: 400px;
-    min-height: 255px;
-}
 
 .search {
-    width: 575;
-    min-height: 205px;
+    width: 575px;
+    min-height: 290px;
+    text-align: center;
 }
 
 .form {
-    width: 575;
-    min-height: 480px;
+    width: 576px;
+    min-height: 397px;
+}
+
+.data {
+    width: 456px;
+    min-height: 40px;
+    margin: 30 60;
+}
+
+.adults {
+    float: left;
+    width: 230px;
+    min-height: 40px;
+}
+
+.children {
+    float: left;
+    width: 180px;
+    min-height: 40px;
 }
 
 .main-footer {

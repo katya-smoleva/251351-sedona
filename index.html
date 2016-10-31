@@ -27,14 +27,16 @@
               </nav>
               <!--end main-navigation-->
               <div class="logo">
-                  <a href="index.html">Логотип</a>
+                  <img src="img/logo-sedona.png" width="138" height="70" alt="Логотип">
               </div>
               <!--end logo-->
           </header>
           <!--end header-->
           <main>
               <div class="welcome">
-                  <img src="#" alt="">
+                  <img src="img/welcome.png" width="188" height="45">
+                  <img src="img/to-the-gorgeous.png" width="257" height="30">
+                  <img src="img/Sedona.png" width="458" height="78">
               </div>
               <!--end welcome-->
               <div class="promo">
@@ -55,20 +57,19 @@
               <!--end advantages-->
               <div class="comfort clearfix">
                   <div class="comfort-item">
-                      <div class="comfort-left">
-                          <h2 class="comfort-title">Жилье</h2>
-                          <p class="comfort-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                      </div>
-                      <div class="comfort-center">
-                          <h2 class="comfort-title">Еда</h2>
-                          <p class="comfort-text">Всегда заказывая фирменный бургер, Вы не разочаруетесь!</p>
-                      </div>
-                      <div class="comfort-right">
-                          <h2 class="comfort-title">Сувениры</h2>
-                          <p class="comfort-text">Не только китайского, но и местного производства!</p>
-                      </div>
+                      <h2 class="comfort-title">Жилье</h2>
+                      <p class="comfort-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  </div>
+                  <div class="comfort-item">
+                      <h2 class="comfort-title">Еда</h2>
+                      <p class="comfort-text">Всегда заказывая фирменный бургер, Вы не разочаруетесь!</p>
+                  </div>
+                  <div class="comfort-item">
+                      <h2 class="comfort-title">Сувениры</h2>
+                      <p class="comfort-text">Не только китайского, но и местного производства!</p>
                   </div>
               </div>
+        
               <!--end comfort-->
               <div class="advantages clearfix">
                   <div class="advantages-bridge-img">
@@ -82,62 +83,54 @@
               </div>
               <!--end advantages-->
               <div class="advantages clearfix">
-                  <div class="advantages-left">
-                      <div class="area">
-                          <h2 class="advantages-left-title">Небольшая площадь</h2>
-                          <span class="advantages-left-number">№3</span>
-                          <p class="advantages-left-text">Все достопримечательности находятся очень близко</p>
-                      </div>
+                  <div class="advantages-item">
+                      <h2 class="advantages-left-title">Небольшая площадь</h2>
+                      <span class="advantages-left-number">№3</span>
+                      <p class="advantages-left-text">Все достопримечательности находятся очень близко</p>
                   </div>
-                  <div class="advantages-center">
-                      <div class="road">
-                          <h2 class="advantages-center-title">Красивая дорога</h2>
-                          <span class="advantages-center-number">№4</span>
-                          <p class="advantages-center-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                      </div> 
-                  </div>
-                  <div class="advantages-right">
-                      <div class="tourists">
-                          <h2 class="advantages-right-title">Мало туристов</h2>
-                          <span class="advantages-right-number">№5</span>
-                          <p class="advantages-right-text">Большинство едет в Гранд Каньон и толпится там</p>
-                      </div>
+                  <div class="advantages-item">
+                      <h2 class="advantages-center-title">Красивая дорога</h2>
+                      <span class="advantages-center-number">№4</span>
+                      <p class="advantages-center-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                  </div> 
+                  <div class="advantages-item">
+                      <h2 class="advantages-right-title">Мало туристов</h2>
+                      <span class="advantages-right-number">№5</span>
+                      <p class="advantages-right-text">Большинство едет в Гранд Каньон и толпится там</p>
                   </div>
               </div>
               <!--end advantages-->
               <div class="search">
                   <p class="search-title">Заинтересовались?</p>
                   <p class="search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-              </div>
-              <!--end search-->
-              <div class="form">
-              <form action="#" method="get" class="reservation">
-                  <fieldset>
-                      <legend>Поиск гостиницы в Седоне</legend>
-                      <div class="reservation-content">
-                          
+                  <a href="#">Поиск гостиницы в Седоне</a>
+                  <div class="form">
+                  <form action="#" method="get" class="reservation">
+                      <div class="data"> 
                           <label for="checkin">Дата заезда:</label>
                           <input type="text" id="checkin" class="date-input" value="24 апреля 2015">
-                      
+                      </div>
+                      <div class="data"> 
                           <label for="checkout">Дата выезда:</label>
                           <input type="text" id="checkout" class="date-input" value="4 июля 2015">
-                          
+                      </div>
+                      <div class="adults">
                           <label for="adults">Взрослые:</label>
                           <a class="reservation-minus" href="#">-</a>
                           <input class="people-number" id="adults" type="text" pattern="[0-9]*" value="2" min="0">
                           <a class="reservation-plus" href="#">+</a>
-                        
+                      </div>
+                      <div class="children">
                           <label for="children">Дети:</label>
                           <a class="reservation-minus" href="#">-</a>
                           <input class="people-number" id="children" type="text" pattern="[0-9]*" value="0" min="0">
                           <a class="reservation-plus" href="#">+</a>
-                          
-                          <input type="submit" value="Найти" disabled>
                       </div>
-                  </fieldset>
-              </form>
+                          <input type="submit" value="Найти" disabled>
+                  </form>
+                  </div>
               </div>
-              <!--end form-->
+              <!--end search-->
           </main>
           <!--end main-->
           <footer class="main-footer">
