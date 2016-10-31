@@ -11,10 +11,10 @@ body {
 }
 
 .clearfix::after {
-  content: "";
-
-  display: table;
-  clear: both;
+    content: "";
+    
+    display: table;
+    clear: both;
 }
 
 .main-navigation {
@@ -119,20 +119,68 @@ body {
 }
 
 .footer-contacts {
-  float: left;
-  width: 312px;
-  margin-right: 88px;
-  min-height: 25px;
+    float: left;
+    width: 312px;
+    margin-right: 88px;
+    min-height: 25px;
 }
 
 .footer-social {
-  float: left;
-  width: 400px;
-  min-height: 50px;
+    float: left;
+    width: 400px;
+    min-height: 50px;
 }
 
 .footer-copyright {
-  float: right;
-  width: 313px;
-  min-height: 44px;
+    float: right;
+    width: 313px;
+    min-height: 44px;
+}
+
+/*Вторая страница*/
+.filter {
+    margin: 0 auto;
+}
+
+.filter-left {
+    float: left;
+    width: 528px;
+    min-height: 215px;
+}
+
+.infrastructure {
+    float: left;
+    width: 241px;
+    min-height: 215px;
+}
+
+.housing {
+    float: right;
+    width: 287px;
+    min-height: 215px;
+}
+
+.filter-right {
+    float: right;
+    width: 528px;
+    min-height: 215px;
+}
+    
+.results{
+    width: 1056px;
+    min-height: 26px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.housing-items {
+    margin: 0 auto;
+}
+
+.housing-item {
+    width: 1056px;
+    min-height: 92px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
