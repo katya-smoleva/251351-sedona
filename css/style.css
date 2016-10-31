@@ -5,6 +5,11 @@ body {
     padding: 0;
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .clearfix::after {
   content: "";
 
@@ -44,7 +49,7 @@ body {
     min-height: 255px;
 }
 
-advantages-city-img {
+.advantages-city-img {
     float: right;
     width: 800px;
     min-height: 255px;
