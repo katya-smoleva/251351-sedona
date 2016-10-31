@@ -1,19 +1,133 @@
+html,
 body {
-    font-family: "PT Sans Narrow", sans-serif, Arial;
+    min-width: 1280px;
+    margin: 0;
+    padding: 0;
 }
 
-p {
-    font-size: 14px;
-    line-height: 26px;
-    color: #333333;
-    font-weight: regular;
-    font-family: "PT Sans Narrow", sans-serif, Arial;
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
 }
 
-h2 {
-    font-size: 21px;
-    line-height: 26px;
-    color: black;
-    font-weight: bold;
-    font-family: "PT Sans Narrow", sans-serif, Arial;
+.main-navigation {
+    float: left;
+    width: 1056px;
+    min-height: 50px;
+}
+
+.logo {
+    float: left;
+    width: 140px;
+    min-height: 70px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.welcome {
+    width: 1200px;
+    min-height: 510px;
+}
+
+.promo {
+    width: 512px;
+    min-height: 116px;
+    margin-right: auto;
+    margin-left: auto; 
+}
+
+.advantages-city-discription {
+    float: left;
+    width: 400px;
+    min-height: 255px;
+}
+
+advantages-city-img {
+    float: right;
+    width: 800px;
+    min-height: 255px;
+}
+
+.comfort-left {
+    float: left;
+    width: 400px;
+    min-height: 330px;
+}
+
+.comfort-center {
+    float: left;
+    width: 400px;
+    min-height: 330px;
+}
+
+.comfort-right {
+    float: right;
+    width: 400px;
+    min-height: 330px;
+}
+
+.advantages-bridge-img {
+    float: left;
+    width: 800px;
+    min-height: 255px;
+}
+
+.advantages-bridge-discription {
+    float: right;
+    width: 400px;
+    min-height: 255px;
+}
+
+.advantages-left {
+    float: left;
+    width: 400px;
+    min-height: 255px;
+}
+
+.advantages-center {
+    float: left;
+    width: 400px;
+    min-height: 255px;
+}
+
+.advantages-right {
+    float: right;
+    width: 400px;
+    min-height: 255px;
+}
+
+.search {
+    width: 575;
+    min-height: 205px;
+}
+
+.form {
+    width: 575;
+    min-height: 480px;
+}
+
+.main-footer {
+  padding-top: 37px;
+  padding-bottom: 37px;
+}
+
+.footer-contacts {
+  float: left;
+  width: 312px;
+  margin-right: 88px;
+  min-height: 25px;
+}
+
+.footer-social {
+  float: left;
+  width: 400px;
+  min-height: 50px;
+}
+
+.footer-copyright {
+  float: right;
+  width: 313px;
+  min-height: 44px;
 }
