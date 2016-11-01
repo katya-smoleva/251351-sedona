@@ -32,8 +32,14 @@ body {
 }
 
 .welcome {
-    width: 1200px;
     min-height: 510px;
+}
+
+welcome img {
+    display: block;
+    width: 460px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .promo {
@@ -79,7 +85,6 @@ body {
     min-height: 255px;
     text-align: center;
 }
-
 
 .search {
     width: 575px;
@@ -139,12 +144,6 @@ body {
     margin: 0 auto;
 }
 
-.filter-left {
-    float: left;
-    width: 528px;
-    min-height: 215px;
-}
-
 .infrastructure {
     float: left;
     width: 241px;
@@ -152,15 +151,16 @@ body {
 }
 
 .housing {
-    float: right;
+    float: left;
     width: 287px;
     min-height: 215px;
 }
 
-.filter-right {
+.price-control {
     float: right;
-    width: 528px;
+    width: 328px;
     min-height: 215px;
+    margin-left: 200px;
 }
     
 .results{
@@ -171,13 +171,29 @@ body {
     margin: 0 auto;
 }
 
+.results-title, .sorting, .sorting-list li{
+    float: left;
+}
+
+.sorting-controls {
+    float: right;
+}
+
 .housing-items {
     margin: 0 auto;
 }
 
 .housing-item {
-    width: 1056px;
+    width: 1200px;
     min-height: 92px;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+figure, .housing-item-description {
+    float: left;
+}
+
+.housing-rating {
+    float: right;
 }
