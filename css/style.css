@@ -213,12 +213,12 @@ body {
 
 .housing-item {
     width: 1200px;
-    min-height: 92px;
+    min-height: 150px;
     /*margin-top: 30px;
     margin-bottom: 30px;*/
 }
 
-.figure {
+.photo {
     float: left;
     width: 135px;
 } 
