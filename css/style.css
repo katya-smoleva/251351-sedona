@@ -1,8 +1,13 @@
 html,
 body {
-    min-width: 1280px;
+    min-width: 1200px;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: #000000;
     margin: 0;
     padding: 0;
+    text-transform: uppercase;
 }
 
 .container {
@@ -18,22 +23,59 @@ body {
 }
 
 .main-header {
-    min-height: 50px;
+    min-height: 56px;
+    color: #000000;
+    background-color: #ffffff;
 }
 
-.main-navigation li{
+.main-navigation {
     float: left;
+}
+
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+.main-navigation li {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 15px 30px;
+    vertical-align: top;
+}
+
+.main-navigation li:hover {
+    color: #766357;
+}
+
+.main-navigation a {
+    color: #000000;
+    text-decoration: none;
 }
 
 .logo {
     float: left;
     margin: 0 auto;
-    display: none;
+    /*display: none;*/
     width: 140px;
 }
 
 .welcome {
     min-height: 510px;
+}
+
+.welcome .welcome-fonts {
+    background: #ffffff url("img/index.sedona.jpg") no-repeat center top;
+}
+
+.welcome .img-Sedona-maska {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .welcome .img-welcome {
@@ -68,6 +110,8 @@ body {
     width: 400px;
     min-height: 255px;
     text-align: center;
+    background-color: #81b3d2;
+    color: #ffffff;
 }
 
 .advantages-city-img {
@@ -81,6 +125,19 @@ body {
     width: 400px;
     min-height: 330px;
     text-align: center;
+    background: #ffffff url("img/sprite.png") no-repeat center;
+}
+
+.house {
+    background-position: -10px -175px;
+}
+
+.food {
+    background-position: -10px -85px;
+}
+
+.souvenir {
+    background-position: -10px -326px;
 }
 
 .advantages-bridge-img {
@@ -94,6 +151,8 @@ body {
     width: 400px;
     min-height: 255px;
     text-align: center;
+    background-color: #81b3d2;
+    color: #ffffff;
 }
 
 .advantages-item {
@@ -101,6 +160,7 @@ body {
     width: 400px;
     min-height: 255px;
     text-align: center;
+    background-color: #eeeeee; 
 }
 
 .search {
@@ -108,51 +168,191 @@ body {
     text-align: center;
 }
 
+.search-title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: #000000;
+}
+
+.panel {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-align: center;
+    width: 576px;
+    height: 88px;
+    background: #766357;
+    position: absolute;
+    left: 352px;
+    top: 2083px;
+}
+
+.panel a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .form {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-align: left;
+    /*margin: auto;*/
+    position: absolute;
+    left: 352px;
+    top: 2171px;
     width: 576px;
     min-height: 397px;
 }
 
 .data {
-    width: 456px;
+    width: 460px;
     min-height: 40px;
-    margin: 30 60;
+    margin: 30px 60px 30px 60px;
+}
+
+.data:first-child {
+    margin-top: 60px;
+}
+
+.date-input{
+    width: 349px;
+    height: 40px;
+    margin-left: auto;
+    background: #f2f2f2;
 }
 
 .adults {
     float: left;
     width: 230px;
     min-height: 40px;
+    margin-left: 60px;
 }
 
 .children {
     float: left;
     width: 180px;
     min-height: 40px;
+    margin-left: 60px;
+}
+
+.reservation-minus, .people-number, .reservation-plus {
+    display: inline-block;
+    text-align: center;
+    width: 38px;
+    height: 38px;
+    background: #f2f2f2;
+}
+
+.reservation-minus a, .reservation-plus a {
+    text-decoration: none;
+}
+
+.find {
+    width: 460px;
+    height: 60px;
+    background: #81b3d2;
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-align: center;
+    margin: 60px;
+}
+
+.map {
+    background: #ffffff url("img/map.jpg") no-repeat center;
+    width: 1200px;
+    height: 475px;
 }
 
 .main-footer {
-  padding-top: 37px;
-  padding-bottom: 37px;
+    padding-top: 37px;
+    padding-bottom: 37px;
+    color: #000000;
+    background: #ffffff;
 }
 
 .footer-contacts {
     float: left;
     width: 312px;
     margin-right: 88px;
-    min-height: 25px;
+}
+
+.footer-contacts a {
+    color: #000000;
+}
+
+.footer-contacts a:hover {
+  text-decoration: none;
 }
 
 .footer-social {
     float: left;
     width: 400px;
-    min-height: 50px;
+    text-align: center;
 }
+
+.social-btn {
+    display: inline-block;
+    width: 46px;
+    height: 49px;
+    margin: 0 2px;
+    background: #81b3d2 url("img/sprite.png") no-repeat center;
+    font-size: 0;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+.social-btn:hover {
+    background-color: #669ec0;
+}
+
+.social-btn-tw {
+    background-position: -10px -422px;
+}
+
+.social-btn-fb {
+    background-position: -10px -46px;
+}
+
+.social-btn-yt {
+    background-position: -10px -10px;
+}
+
+/*.social-btn-tw:hover {
+    background-position: px px;
+}
+
+.social-btn-fb:hover {
+    background-position: px px;
+}
+
+.social-btn-yt:hover {
+    background-position: px px;
+}*/
 
 .footer-copyright {
     float: right;
-    width: 313px;
-    min-height: 44px;
+    max-width: 241px;
+}
+
+.footer-copyright p {
+    margin: 0;
+    text-align: left;
+}
+
+.footer-copyright .btn {
+    margin: 0;
+}
+
+.footer-copyright .btn:hover {
+    color: #8ab8d5;
+    background-color: #ffffff;
 }
 
 /*Вторая страница*/
