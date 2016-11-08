@@ -366,12 +366,15 @@ a {
     padding-bottom: 37px;
     color: #000000;
     background: #ffffff;
+    position: relative;
 }
 
 .footer-contacts {
     float: left;
-    width: 312px;
-    margin-right: 88px;
+    width: 33%;
+    /*width: 312px;*/
+    margin-left: 88px;
+    
 }
 
 .footer-contacts a {
@@ -384,7 +387,8 @@ a {
 
 .footer-social {
     float: left;
-    width: 400px;
+    width: 33%;
+    /*width: 400px;*/
     text-align: center;
 }
 
@@ -428,18 +432,29 @@ a {
 }*/
 
 .footer-copyright {
-    float: right;
+    float: left;
     width: 33%;
     max-width: 241px;
 }
 
 .footer-copyright p {
-    margin: 0;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: regular;
+    font-family: "PT Sans", "Arial", sans-serif;
     text-align: left;
+    line-height: 26px;
 }
 
-.footer-copyright .btn {
-    margin: 0;
+.footer-copyright a {
+    background: url("../img/html-academy.png") no-repeat center;
+    position: absolute;
+    right: 100px;
+    top: 47px;
+    width: 113px;
+    height: 39px;
+    text-decoration: none;
+    font-size: 0;
 }
 
 .footer-copyright .btn:hover {
@@ -448,6 +463,10 @@ a {
 }
 
 /*Вторая страница*/
+a {
+    color: #000000;
+}
+
 .blurry-sedona {
     background: #ffffff url("../img/blurry-sedona.jpg") no-repeat center;
     width: 1200px;
@@ -473,7 +492,7 @@ a {
     padding: 0;
 }
 
-.filter label, a {
+.filter label, .filter a {
     font-size: 14px;
     line-height: 21px;
     font-weight: regular;
@@ -496,33 +515,104 @@ a {
 }
 
 .price-control {
-    float: right;
-    width: 328px;
+    float: left;
+    width: 324px;
     min-height: 215px;
     margin-left: 200px;
 }
+
+.price-control .btn {
+    width: 141px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: regular;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-align: center;
+    padding: 19px 35px;
+    border: #ffffff solid 2px;
+    color: #ffffff;
+}
+
+.price-control .min-price {
+    float: left;
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: regular;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-align: center;
+    padding: 10px 60px;
+    border: #ffffff solid 2px;
+    color: #ffffff;
+}
+
+.price-control .max-price {
+    float: left;
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: regular;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-align: center;
+    padding: 10px 60px;
+    border: #ffffff solid 2px;
+    color: #ffffff;
+}
     
 .results{
-    width: 1056px;
-    min-height: 26px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    width: 1052px;
+    min-height: 85px;
     margin: 0 auto;
 }
 
 .results-title {
     float: left;
-    width: 100px;
+    width: 160px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-align: left;
+    line-height: 85px;
+}
+
+.results-title .quantity {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .sorting {
     float: left;
-    width: 80px;
+    width: 110px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: regular;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-align: left;
+    line-height: 85px;
 }
 
-.sorting-list li{
+.sorting-list li {
     float: left;
-    width: 250px;
+    width: 80px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: regular;
+    font-family: "PT Sans", "Arial", sans-serif; 
+    color: #e0e0e0;
+    border-bottom: 1px dashed #e0e0e0;
+    text-align: left;
+    line-height: 85px;
+}
+
+.sorting-list li:hover {
+    color: #81b3d2;
+    border-bottom: none;
 }
 
 .sorting-controls {
@@ -532,6 +622,7 @@ a {
 
 .housing-items {
     margin: 0 auto;
+    width: 1052px;
 }
 
 .housing-item {
@@ -548,10 +639,63 @@ a {
 
 .housing-item-description {
     float: left;
-    width: 260px;
+    width: 300px;
+}
+
+.housing-item-title {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    font-family: "PT Sans", "Arial", sans-serif; 
+}
+
+.housing-item-text {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: regular;
+    font-family: "PT Sans", "Arial", sans-serif; 
+}
+
+.item-btn-details {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    font-family: "PT Sans", "Arial", sans-serif; 
+    width: 110px;
+    height: 27px;
+    background-color: #81b3d2;
+    color: #ffffff;
+    padding: 7px 17px;
+    margin-right: 7px;
+    text-align: center;
+}
+
+.item-btn-reservations {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    font-family: "PT Sans", "Arial", sans-serif; 
+    width: 110px;
+    height: 27px;
+    background-color: #766357;
+    color: #ffffff;
+    padding: 7px 17px;
+    text-align: center;
 }
 
 .housing-rating {
     float: right;
     width: 100px;
+}
+
+.rating-text {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: regular;
+    font-family: "PT Sans", "Arial", sans-serif;
+    width: 110px;
+    height: 27px;
+    background-color: #f2f2f2;
+    color: #8b8b8b;
+    text-align: center;
 }
