@@ -75,14 +75,16 @@ body {
 
 .welcome {
     min-height: 510px;
-    text-align: center;
-}
-
-.welcome .welcome-fonts {
     background: #ffffff url("../img/background-Sedona.jpg") no-repeat center;
     width: 1200px;
     height: 510px;
-    position: relative;
+    text-align: center;
+}
+
+.inscription {
+    display: block;
+    width: 440px;
+    margin: 0 auto;
 }
 
 /*.welcome-fonts::after {
@@ -96,36 +98,29 @@ body {
 }*/
 
 .welcome .img-welcome {
+    padding-top: 75px;
     width: 188px;
     height: 45px;
-    position: absolute;
-    left: 546px;
-    top: 132px;
 }
 
-.welcome .img-gorgeous {
+/*.welcome .img-gorgeous {
+    display: inline-block;
     width: 257px;
     height: 30px;
-    position: absolute;
-    left: 553px;
-    top: 188px;
-}
+}*/
 
 .welcome .img-Sedona {
     width: 458px;
     height: 78px;
-    position: absolute;
-    left: 411px;
-    top: 270px;
+    padding-bottom: 55px;
+    padding-top: 55px;
 }
 
-.welcome .img-Grand-Canyon {
+/*.welcome .img-Grand-Canyon {
+    display: inline-block;
     width: 296px;
     height: 80px;
-    position: absolute;
-    left: 492px;
-    top: 404px;
-}
+}*/
 
 .promo {
     text-align: center;
@@ -257,6 +252,7 @@ body {
 }
 
 .panel {
+    display: block;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -266,18 +262,17 @@ body {
     width: 576px;
     height: 88px;
     background: #766357;
+    text-decoration: none;
+    color: #ffffff;
     /*position: absolute;
     top: 202px;
     left: 0;*/
 }
 
-a {
+/*a {
     text-decoration: none;
     color: #ffffff;
-    padding: 33px 140px;
-    /*margin-top: 30px;
-    margin-bottom: 30px;*/
-}
+}*/
 
 .form {
     font-size: 14px;
@@ -367,25 +362,17 @@ a {
 }
 
 .main-footer {
-    /*padding-top: 37px;
-    padding-bottom: 37px;*/
-    width: 1200px;
-    min-height: 120px;
-    color: #000000;
     background: #ffffff;
-    /*position: relative;*/
 }
 
 .footer-contacts {
     float: left;
-    width: 33%;
-    /*width: 312px;*/
-    margin-left: 88px;
-    
+    width: 400px;
 }
 
 .footer-contacts a {
     color: #000000;
+    text-decoration: none;
 }
 
 .footer-contacts a:hover {
@@ -394,8 +381,7 @@ a {
 
 .footer-social {
     float: left;
-    width: 33%;
-    /*width: 400px;*/
+    width: 400px;
     text-align: center;
 }
 
@@ -407,6 +393,7 @@ a {
     background: #81b3d2 url("../img/sprite.png") no-repeat center;
     font-size: 0;
     vertical-align: top;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -440,8 +427,7 @@ a {
 
 .footer-copyright {
     float: left;
-    width: 33%;
-    /*max-width: 241px;*/
+    width: 400px;
 }
 
 .footer-copyright p {
@@ -572,7 +558,6 @@ a {
 .results{
     width: 1052px;
     min-height: 85px;
-    margin: 0 auto;
 }
 
 .results-title {
@@ -609,9 +594,13 @@ a {
     font-family: "PT Sans", "Arial", sans-serif; 
     color: #e0e0e0;
     border-bottom: 1px dashed #e0e0e0;
-    text-align: left;
     line-height: 18px;
     list-style: none;
+    padding-right: 30px;
+}
+
+.sorting-list li:last-child {
+    padding-right: 0;
 }
 
 .sorting-list li:hover {
