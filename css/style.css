@@ -87,27 +87,11 @@ body {
     margin: 0 auto;
 }
 
-/*.welcome-fonts::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    background-image: url("../img/index.sedona.maska.png");
-    width: 1200px;
-    height: 57px;
-    display: block;
-}*/
-
 .welcome .img-welcome {
     padding-top: 75px;
     width: 188px;
     height: 45px;
 }
-
-/*.welcome .img-gorgeous {
-    display: inline-block;
-    width: 257px;
-    height: 30px;
-}*/
 
 .welcome .img-Sedona {
     width: 458px;
@@ -115,12 +99,6 @@ body {
     padding-bottom: 55px;
     padding-top: 55px;
 }
-
-/*.welcome .img-Grand-Canyon {
-    display: inline-block;
-    width: 296px;
-    height: 80px;
-}*/
 
 .promo {
     text-align: center;
@@ -264,15 +242,7 @@ body {
     background: #766357;
     text-decoration: none;
     color: #ffffff;
-    /*position: absolute;
-    top: 202px;
-    left: 0;*/
 }
-
-/*a {
-    text-decoration: none;
-    color: #ffffff;
-}*/
 
 .form {
     font-size: 14px;
@@ -283,8 +253,6 @@ body {
     width: 576px;
     min-height: 397px;
     background: #ffffff;
-    /*position: absolute;
-    bottom: -32px;*/
     display: none;
 }
 
@@ -373,6 +341,12 @@ body {
 .footer-contacts a {
     color: #000000;
     text-decoration: none;
+    font-size: 21px;
+    line-height: 85px;
+    font-weight: bold;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-align: center;
+
 }
 
 .footer-contacts a:hover {
@@ -392,7 +366,6 @@ body {
     margin: 0 2px;
     background: #81b3d2 url("../img/sprite.png") no-repeat center;
     font-size: 0;
-    vertical-align: top;
     text-align: center;
     text-decoration: none;
 }
@@ -432,22 +405,24 @@ body {
 
 .footer-copyright p {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 85px;
     font-weight: regular;
     font-family: "PT Sans", "Arial", sans-serif;
-    text-align: left;
-    line-height: 26px;
+    text-align: right;
+    width: 180px;
+    display: inline-block;
+    margin: 0;
 }
 
 .footer-copyright a {
     background: url("../img/html-academy.png") no-repeat center;
-    /*position: absolute;
-    right: 100px;
-    top: 47px;*/
+    display: inline-block;
     width: 113px;
     height: 39px;
     text-decoration: none;
     font-size: 0;
+    text-align: right;
+    margin: 0;
 }
 
 .footer-copyright .btn:hover {
@@ -468,9 +443,9 @@ a {
 }
 
 .filter {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     position: absolute;
-    top: 70px;
+    top: 71px;
     left: 105px;
     color: #ffffff;
 }
@@ -509,26 +484,13 @@ a {
 
 .price-control {
     float: left;
-    width: 324px;
+    width: 400px;
     min-height: 215px;
     margin-left: 200px;
 }
 
-.price-control .btn {
-    width: 141px;
-    height: 40px;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: regular;
-    font-family: "PT Sans", "Arial", sans-serif;
-    text-align: center;
-    padding: 19px 35px;
-    border: #ffffff solid 2px;
-    color: #ffffff;
-}
-
 .price-control .min-price {
-    float: left;
+    display: inline-block;
     width: 160px;
     height: 40px;
     font-size: 14px;
@@ -536,13 +498,12 @@ a {
     font-weight: regular;
     font-family: "PT Sans", "Arial", sans-serif;
     text-align: center;
-    padding: 10px 60px;
     border: #ffffff solid 2px;
     color: #ffffff;
 }
 
 .price-control .max-price {
-    float: left;
+    display: inline-block;
     width: 160px;
     height: 40px;
     font-size: 14px;
@@ -550,11 +511,24 @@ a {
     font-weight: regular;
     font-family: "PT Sans", "Arial", sans-serif;
     text-align: center;
-    padding: 10px 60px;
     border: #ffffff solid 2px;
     color: #ffffff;
 }
     
+.price-control .btn {
+    width: 141px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: regular;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-align: center;
+    display: block;
+    border: #ffffff solid 2px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .results{
     width: 1052px;
     min-height: 85px;
@@ -593,7 +567,6 @@ a {
     font-size: 12px;
     font-family: "PT Sans", "Arial", sans-serif; 
     color: #e0e0e0;
-    border-bottom: 1px dashed #e0e0e0;
     line-height: 18px;
     list-style: none;
     padding-right: 30px;
@@ -608,9 +581,14 @@ a {
     border-bottom: none;
 }
 
+.sorting-list a {
+    text-decoration: none;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
 .sorting-controls {
     float: right;
-    width: 237px;
+    width: 110px;
 }
 
 .arrow-ascending {
@@ -640,14 +618,12 @@ a {
 .housing-item {
     width: 1052px;
     min-height: 150px;
-    margin: 0 auto;
-    /*margin-top: 30px;
-    margin-bottom: 30px;*/
 }
 
 .photo {
     float: left;
     width: 135px;
+    height: 90px;
 } 
 
 .housing-item-description {
@@ -660,6 +636,7 @@ a {
     line-height: 26px;
     font-weight: bold;
     font-family: "PT Sans", "Arial", sans-serif; 
+    text-decoration: none;
 }
 
 .housing-item-text {
@@ -681,6 +658,7 @@ a {
     padding: 7px 17px;
     margin-right: 7px;
     text-align: center;
+    text-decoration: none;
 }
 
 .item-btn-reservations {
@@ -694,11 +672,12 @@ a {
     color: #ffffff;
     padding: 7px 17px;
     text-align: center;
+    text-decoration: none;
 }
 
 .housing-rating {
     float: right;
-    width: 100px;
+    width: 110px;
 }
 
 .rating-stars>span {
