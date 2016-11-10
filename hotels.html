@@ -71,22 +71,34 @@
                               </div>
                           </fieldset>
                       </div>
-                      <div class="price-control">
-                          <span class="price-title">Стоимость в сутки (р):</span>
-                          <div>
-                              <!--<label for="price-from">от</label>
-                              <input class="min-price" id="price-from" type="number" value="0" min="0" max="5000" pattern="[0-9]*">-->
-                              <span class="min-price">от 3</span>
-                              <span class="max-price">до 3000</span>
+                      <div class="filter-range">
+                          <div class="filter-range-title">
+                              Стоимость в сутки (р):
                           </div>
-                          <!--<div>
-                              <label for="price-to">до</label>
-                              <input class="max-price" id="price-to" type="number" value="3000" min="0" max="5000" pattern="[0-9]*">
-                          </div>-->
-                          <!--<input class="max-price" id="price-to" type="range" value="3000" min="0" max="5000" pattern="[0-9]*">-->
-                          <a class="btn" href="#">Показать</a>
+                          <!--end filter-range-title-->
+                          <div class="price-controls">
+                              <label class="min-price">от 
+                                  <input type="text" name="min-price" value="0">
+                              </label>
+                              <label class="max-price">до 
+                                  <input type="text" name="max-price" value="3000">
+                              </label>
+                          </div>
+                          <!--end price-control-->
+                          <div class="range-controls">
+                              <div class="scale">
+                                  <div class="bar"></div>
+                              </div>
+                              <div class="range-toggle range-toggle-min"></div>
+                              <div class="range-toggle range-toggle-max"></div>
+                          </div>
+                          <!--end range-controls-->
+                          <button class="btn-transparent" type="submit">
+                              Показать
+                          </button>
+                          <!--end button-->
                       </div>
-                      <!--end price-control-->
+                      <!--end filter-range-->
                   </form>
                   <!--end form--> 
               </div>

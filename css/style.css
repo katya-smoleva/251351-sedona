@@ -450,7 +450,7 @@ a {
     color: #ffffff;
 }
 
-.filter legend, .price-title {
+.filter legend {
     font-size: 16px;
     line-height: 21px;
     font-weight: bold;
@@ -460,7 +460,7 @@ a {
     padding: 0;
 }
 
-.filter label, .filter a {
+/*.filter label {
     font-size: 14px;
     line-height: 21px;
     font-weight: regular;
@@ -468,6 +468,39 @@ a {
     text-align: left;
     margin: 0;
     padding: 0;
+}*/
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 40px;
+    font-size: 14px;
+    line-height: 21px; 
+    font-weight: regular;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url("../img/checkbox.png") no-repeat;
+    background-position: -10px -10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+input[type="checkbox"]:checked + label::before {
+    background-position: -10px -52px;
 }
 
 .infrastructure {
@@ -482,56 +515,131 @@ a {
     min-height: 215px;
 }
 
-.price-control {
+.filter-range { 
+    color: #ffffff;
     float: left;
-    width: 400px;
+    width: 330px;
     min-height: 215px;
     margin-left: 200px;
 }
 
-.price-control .min-price {
-    display: inline-block;
-    width: 160px;
-    height: 40px;
-    font-size: 14px;
-    line-height: 40px;
-    font-weight: regular;
-    font-family: "PT Sans", "Arial", sans-serif;
-    text-align: center;
-    border: #ffffff solid 2px;
-    color: #ffffff;
+.filter-range-title {
+    margin-bottom: 9px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
 }
 
-.price-control .max-price {
-    display: inline-block;
-    width: 160px;
-    height: 40px;
-    font-size: 14px;
-    line-height: 40px;
-    font-weight: regular;
-    font-family: "PT Sans", "Arial", sans-serif;
-    text-align: center;
-    border: #ffffff solid 2px;
-    color: #ffffff;
+.price-controls {
+    position: relative;
+    height: 36px;
+    margin-bottom: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    font-size: 0;
 }
-    
-.price-control .btn {
-    width: 141px;
-    height: 40px;
+
+.price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+    display: inline-block;
     font-size: 14px;
-    line-height: 40px;
-    font-weight: regular;
-    font-family: "PT Sans", "Arial", sans-serif;
-    text-align: center;
+    line-height: 38px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.price-controls .min-price, .price-controls .max-price {
+    width: 90px;
+    padding-left: 65px;
+}
+
+.price-controls input {
+    width: 50px; 
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+}
+
+.range-controls {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: #928381;
+}
+
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+
+.range-toggle-max {
+    left: 80%;
+}
+
+.btn-transparent {
     display: block;
-    border: #ffffff solid 2px;
+    margin: 0 auto;
+    padding: 6px 35px;
+    font-size: 14px;
+    line-height: 20px;
     color: #ffffff;
-    text-decoration: none;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn-transparent:hover {
+    color: #000000;
+    background: #ffffff;
 }
 
 .results{
     width: 1052px;
     min-height: 85px;
+}
+
+.results ul {
+    float: left;
+    width: 300px;
 }
 
 .results-title {
