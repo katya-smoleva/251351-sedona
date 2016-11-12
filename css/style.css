@@ -107,11 +107,15 @@ body {
     min-height: 216px;
     text-align: center;
     background-color: #ffffff;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.promo p {
-    /*margin-top: 32px;
-    margin-bottom: 54px;*/
+.promo h2 {
+    margin: 0;
+    display: inline-block;
+    width: 460px;
+    text-align: center;
 }
 
 .advantages {
@@ -231,6 +235,10 @@ body {
     text-align: center;
 }
 
+.search-hotel {
+    position: relative;
+}
+
 .search-text {
     color: #000000;
     text-align: center;
@@ -262,7 +270,11 @@ body {
     width: 576px;
     min-height: 397px;
     background: #ffffff;
+    margin: 0 auto;
     display: none;
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 -288px;
 }
 
 .data {
