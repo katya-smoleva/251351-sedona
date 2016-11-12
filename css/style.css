@@ -8,11 +8,13 @@ body {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
+    background: #f2f2f2; 
 }
 
 .container {
     width: 1200px;
     margin: 0 auto;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
 }
 
 .clearfix::after {
@@ -34,7 +36,7 @@ body {
 
 .main-header {
     position: relative;
-    min-height: 56px;
+    /*min-height: 56px;*/
     color: #000000;
     background-color: #ffffff;
 }
@@ -48,11 +50,11 @@ body {
 
 .main-navigation li {
     display: inline-block;
-    padding-top: 15px;
     text-align: center;
     vertical-align: top;
     width: 20%;
     min-height: 56px;
+    line-height: 56px;
 }
 
 .main-navigation li:nth-child(3) {
@@ -74,10 +76,10 @@ body {
 }
 
 .welcome {
-    min-height: 510px;
-    background: #ffffff url("../img/background-Sedona.jpg") no-repeat center;
     width: 1200px;
-    height: 510px;
+    min-height: 510px;
+    background: #355d80 url("../img/background-sedona.jpg") no-repeat center;
+    background-position-y: -54px;
     text-align: center;
 }
 
@@ -93,7 +95,7 @@ body {
     height: 45px;
 }
 
-.welcome .img-Sedona {
+.welcome .img-sedona {
     width: 458px;
     height: 78px;
     padding-bottom: 55px;
@@ -101,13 +103,15 @@ body {
 }
 
 .promo {
+    width: 1200px;
+    min-height: 216px;
     text-align: center;
-    margin-top: 60px;
+    background-color: #ffffff;
 }
 
 .promo p {
-    margin-top: 32px;
-    margin-bottom: 54px;
+    /*margin-top: 32px;
+    margin-bottom: 54px;*/
 }
 
 .advantages {
@@ -131,14 +135,16 @@ body {
 
 .comfort {
     min-height: 330px;
+    width: 1200px;
+    background-color: #ffffff;
 }
 
 .comfort-item {
     float: left;
     width: 400px;
     margin-top: 165px;
-    text-align: center;
     margin-bottom: 86px;
+    text-align: center;
 }
 
 .comfort-item h2 {
@@ -208,11 +214,13 @@ body {
 }
 
 .search {
-    width: 576px;
+    /*width: 576px;*/
+    width: 1200px;
     min-height: 235px;
     text-align: center;
     /*position: relative;*/
     margin: 0 auto;
+    background-color: #ffffff;
 }
 
 .search-title {
@@ -231,6 +239,7 @@ body {
 
 .panel {
     display: block;
+    margin: 0 auto;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -331,6 +340,7 @@ body {
 
 .main-footer {
     background: #ffffff;
+    width: 1200px;
 }
 
 .footer-contacts {
@@ -635,6 +645,9 @@ input[type="checkbox"]:checked + label::before {
 .results{
     width: 1052px;
     min-height: 85px;
+    padding-left: 72px;
+    padding-right: 76px;
+    background-color: #ffffff;
 }
 
 .results ul {
@@ -726,6 +739,9 @@ input[type="checkbox"]:checked + label::before {
 .housing-item {
     width: 1052px;
     min-height: 150px;
+    padding-left: 72px;
+    padding-right: 76px;
+    background-color: #ffffff;
 }
 
 .photo {
