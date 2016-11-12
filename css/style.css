@@ -104,11 +104,12 @@ body {
 
 .promo {
     width: 1200px;
-    min-height: 216px;
+    min-height: 156px;
     text-align: center;
     background-color: #ffffff;
     display: inline-block;
     vertical-align: middle;
+    padding-top: 60px;
 }
 
 .promo h2 {
@@ -122,13 +123,16 @@ body {
     height: 256px;
 }
 
-.advantages-city-discription {
+.advantages-city-description {
     float: left;
     width: 400px;
-    height: 100%; 
+    height: 201px; 
     text-align: center;
     background-color: #81b3d2;
     color: #ffffff;
+    margin: 0;
+    padding-top: 55px;
+    line-height: 21px;
 }
 
 .advantages-city-img {
@@ -200,19 +204,23 @@ body {
     height: 100%; 
 }
 
-.advantages-bridge-discription {
+.advantages-bridge-description {
     float: left;
     width: 400px;
-    height: 100%;
+    height: 201px;
     text-align: center;
     background-color: #81b3d2;
     color: #ffffff;
+    line-height: 21px;
+    padding-top: 55px;
 }
 
 .advantages-item {
     float: left;
     width: 400px;
-    height: 100%;
+    height: 206;
+    padding-top: 50px;
+    line-height: 21px;
     text-align: center;
     background-color: #eeeeee; 
 }
@@ -237,6 +245,7 @@ body {
 
 .search-hotel {
     position: relative;
+    padding-top: 57px;
 }
 
 .search-text {
@@ -470,6 +479,7 @@ a {
     top: 71px;
     left: 105px;
     color: #ffffff;
+    padding-top: 20px;
 }
 
 .filter legend {
@@ -482,15 +492,13 @@ a {
     padding: 0;
 }
 
-/*.filter label {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: regular;
-    font-family: "PT Sans", "Arial", sans-serif;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-}*/
+fieldset  {
+    border: 0;
+}
+
+.infrastructure div, .housing div, .infrastructure legend, .housing legend {
+    padding-bottom: 20px;
+}
 
 input[type="checkbox"] {
     display: none;
@@ -620,7 +628,6 @@ input[type="checkbox"]:checked + label::before {
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
-
 }
 
 .range-toggle:hover {
@@ -675,6 +682,8 @@ input[type="checkbox"]:checked + label::before {
     font-weight: bold;
     font-family: "PT Sans", "Arial", sans-serif;
     text-align: left;
+    margin: 0;
+    padding-top: 30px;
 }
 
 .results-title .quantity {
@@ -692,6 +701,13 @@ input[type="checkbox"]:checked + label::before {
     font-family: "PT Sans", "Arial", sans-serif;
     text-align: left;
     line-height: 18px;
+    margin: 0;
+    padding-top: 40px;
+}
+
+.sorting-list {
+    margin: 0;
+    padding-top: 40px;
 }
 
 .sorting-list li {
@@ -722,6 +738,8 @@ input[type="checkbox"]:checked + label::before {
 .sorting-controls {
     float: right;
     width: 110px;
+    margin: 0;
+    padding-top: 40px;
 }
 
 .arrow-ascending {
@@ -743,11 +761,6 @@ input[type="checkbox"]:checked + label::before {
     padding: 0;
 }
 
-/*.housing-items {
-    margin: 0 auto;
-    width: 1200px;
-}*/
-
 .housing-item {
     width: 1052px;
     min-height: 150px;
@@ -760,11 +773,16 @@ input[type="checkbox"]:checked + label::before {
     float: left;
     width: 135px;
     height: 90px;
+    margin: 0;
+    padding-top: 32px;
+    padding-right: 22px;
 } 
 
 .housing-item-description {
     float: left;
     width: 650px;
+    margin: 0;
+    padding-top: 32px;
 }
 
 .housing-item-title {
@@ -814,6 +832,8 @@ input[type="checkbox"]:checked + label::before {
 .housing-rating {
     float: right;
     width: 110px;
+    margin: 0;
+    padding-top: 32px;
 }
 
 .rating-stars>span {
