@@ -36,7 +36,6 @@ body {
 
 .main-header {
     position: relative;
-    /*min-height: 56px;*/
     color: #000000;
     background-color: #ffffff;
 }
@@ -53,8 +52,10 @@ body {
     text-align: center;
     vertical-align: top;
     width: 20%;
-    min-height: 56px;
+    height: 56px;
     line-height: 56px;
+    padding: 0;
+    margin: 0;
 }
 
 .main-navigation li:nth-child(3) {
@@ -69,7 +70,7 @@ body {
     color: #000000;
     text-decoration: none;
     font-size: 14px;
-    line-height: 26px;
+    /*line-height: 26px;*/
     font-weight: bold;
     font-family: "PT Sans", "Arial", sans-serif;
     text-align: center;
@@ -87,19 +88,13 @@ body {
     display: block;
     width: 440px;
     margin: 0 auto;
+    padding-top: 77px;
 }
 
-.welcome .img-welcome {
-    padding-top: 75px;
-    width: 188px;
-    height: 45px;
-}
-
-.welcome .img-sedona {
-    width: 458px;
-    height: 78px;
-    padding-bottom: 55px;
-    padding-top: 55px;
+.inscription img:nth-child(3) {
+    padding-top: 45px;
+    padding-bottom: 50px;
+    margin: 0;
 }
 
 .promo {
@@ -115,12 +110,24 @@ body {
 .promo h2 {
     margin: 0;
     display: inline-block;
+    vertical-align: middle;
     width: 460px;
     text-align: center;
 }
 
+.promo p {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-align: center;
+    padding-top: 25px;
+    margin: 0;
+}
+
 .advantages {
     height: 256px;
+    background-color: #eeeeee; 
 }
 
 .advantages-city-description {
@@ -131,8 +138,18 @@ body {
     background-color: #81b3d2;
     color: #ffffff;
     margin: 0;
-    padding-top: 55px;
+    padding-top: 53px;
     line-height: 21px;
+}
+
+.advantages-city-description h2 {
+    margin: 0;
+    padding-bottom: 23px;
+}
+
+.advantages-city-description p {
+    margin: 0;
+    padding-top: 21px;
 }
 
 .advantages-city-img {
@@ -142,7 +159,7 @@ body {
 }
 
 .comfort {
-    min-height: 330px;
+    height: 330px;
     width: 1200px;
     background-color: #ffffff;
 }
@@ -150,13 +167,14 @@ body {
 .comfort-item {
     float: left;
     width: 400px;
-    margin-top: 165px;
-    margin-bottom: 86px;
+    margin-top: 157px;
+    /*margin-bottom: 86px;*/
     text-align: center;
 }
 
 .comfort-item h2 {
     position: relative;
+    margin: 0;
 }
 
 .house h2::before {
@@ -167,7 +185,7 @@ body {
     position: absolute;
     left: 50%;
     margin: 0 0 0 -37px;
-    top: -130px;
+    top: -99px;
     width: 74px;
     height: 71px;
 }
@@ -180,7 +198,7 @@ body {
     position: absolute;
     left: 50%;
     margin: 0 0 0 -37px;
-    top: -130px;
+    top: -99px;
     width: 74px;
     height: 71px;
 }
@@ -193,7 +211,7 @@ body {
     position: absolute;
     left: 50%;
     margin: 0 0 0 -33px;
-    top: -130px;
+    top: -99px;
     width: 66px;
     height: 76px;
 }
@@ -207,32 +225,56 @@ body {
 .advantages-bridge-description {
     float: left;
     width: 400px;
-    height: 201px;
+    height: 203px;
     text-align: center;
     background-color: #81b3d2;
     color: #ffffff;
     line-height: 21px;
-    padding-top: 55px;
+    padding-top: 53px;
+}
+
+.advantages-bridge-description h2 {
+    margin: 0;
+    padding-bottom: 23px;
+}
+
+.advantages-bridge-description p {
+    margin: 0;
+    padding-top: 21px;
 }
 
 .advantages-item {
     float: left;
     width: 400px;
-    height: 206;
-    padding-top: 50px;
+    padding-top: 45px;
     line-height: 21px;
     text-align: center;
-    background-color: #eeeeee; 
+}
+
+.advantages-item h2 {
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+.advantages-item p {
+    margin: 0;
+    padding-top: 20px;
 }
 
 .search {
     /*width: 576px;*/
     width: 1200px;
-    min-height: 235px;
+    height: 291px;
     text-align: center;
     /*position: relative;*/
     margin: 0 auto;
     background-color: #ffffff;
+}
+
+.search-hotel {
+    position: relative;
+    padding-top: 53px;
+    height: 238px;
 }
 
 .search-title {
@@ -241,17 +283,15 @@ body {
     font-family: "PT Sans", "Arial", sans-serif;
     color: #000000;
     text-align: center;
-}
-
-.search-hotel {
-    position: relative;
-    padding-top: 57px;
+    margin: 0;
+    padding-bottom: 27px;
 }
 
 .search-text {
     color: #000000;
     text-align: center;
-    padding-bottom: 52px;
+    padding-bottom: 45px;
+    margin: 0;
 }
 
 .panel {
@@ -263,8 +303,8 @@ body {
     font-family: "PT Sans", "Arial", sans-serif;
     text-align: center;
     line-height: 88px;
-    width: 576px;
-    height: 88px;
+    width: 568px;
+    height: 87px;
     background: #766357;
     text-decoration: none;
     color: #ffffff;
@@ -276,41 +316,67 @@ body {
     font-weight: bold;
     font-family: "PT Sans", "Arial", sans-serif;
     text-align: left;
-    width: 576px;
-    min-height: 397px;
+    width: 568px;
+    height: 394px;
     background: #ffffff;
-    margin: 0 auto;
-    display: none;
+    /*display: none;*/
     position: absolute;
     left: 50%;
-    margin: 0 0 0 -288px;
+    margin: 0 0 0 -284px;
 }
 
 .data {
-    width: 460px;
+    width: 511px;
     min-height: 40px;
-    margin: 30px 60px 30px 60px;
+    /*margin: 30px 60px 30px 60px;*/
+    margin: 0;
+    padding: 0;
+    padding-top: 52px;
+    padding-left: 57px;
 }
 
-.data:first-child {
-    margin-top: 60px;
-}
-
-.date-input{
-    width: 349px;
-    height: 40px;
-    margin-left: auto;
+.date-input {
+    width: 332px;
+    height: 38px;
+    margin-left: 18px;
+    padding-left: 15px;
     background: #f2f2f2;
     border: none;
     text-align: left;
-    padding-left: 15px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+}
+
+.data:nth-child(2) {
+    margin: 0;
+    padding-top: 28px;
+    padding-left: 56px;
+}
+
+.date-out {
+    width: 332px;
+    height: 38px;
+    margin-left: 15px;
+    padding-left: 14px;
+    background: #f2f2f2;
+    border: none;
+    text-align: left;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
 }
 
 .adults {
     float: left;
     width: 230px;
     min-height: 40px;
-    margin-left: 60px;
+    margin-left: 55px;
+    margin-top: 30px;
     text-align: left;
 }
 
@@ -318,11 +384,12 @@ body {
     float: left;
     width: 180px;
     min-height: 40px;
-    margin-left: 60px;
+    margin-left: 50px;
+    margin-top: 30px;
     text-align: left;
 }
 
-.reservation-minus, .people-number, .reservation-plus {
+.reservation-minus {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
@@ -331,6 +398,39 @@ body {
     line-height: 38px;
     background: #f2f2f2;
     border: none;
+    margin-left: 36px;
+}
+
+.people-number {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background: #f2f2f2;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+}
+
+.reservation-plus {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background: #f2f2f2;
+    border: none;
+    margin: 0;
+    padding: 0;
 }
 
 .reservation-minus a, .reservation-plus a {
@@ -340,7 +440,7 @@ body {
 }
 
 .find {
-    width: 460px;
+    width: 458px;
     height: 60px;
     background: #81b3d2;
     color: #ffffff;
@@ -349,14 +449,17 @@ body {
     font-weight: bold;
     font-family: "PT Sans", "Arial", sans-serif;
     text-align: center;
-    margin: 60px;
+    margin: 0;
     text-transform: uppercase;
+    border: none;
+    margin-left: 55px;
+    margin-top: 14px;
 }
 
 .map {
     background: #ffffff url("../img/map.jpg") no-repeat center;
     width: 1200px;
-    height: 475px;
+    height: 472px;
 }
 
 .main-footer {
@@ -367,17 +470,19 @@ body {
 .footer-contacts {
     float: left;
     width: 400px;
+    height: 120px;
 }
 
 .footer-contacts a {
     color: #000000;
+    height: 105px;
     text-decoration: none;
     font-size: 21px;
     line-height: 85px;
     font-weight: bold;
     font-family: "PT Sans", "Arial", sans-serif;
     text-align: center;
-
+    padding-top: 15px;
 }
 
 .footer-contacts a:hover {
@@ -387,14 +492,17 @@ body {
 .footer-social {
     float: left;
     width: 400px;
+    height: 120px;
     text-align: center;
 }
 
 .social-btn {
     display: inline-block;
+    vertical-align: middle;
     width: 46px;
     height: 48px;
     margin: 0 2px;
+    margin-top: 35px;
     background: #81b3d2 url("../img/sprite.png") no-repeat center;
     font-size: 0;
     text-align: center;
@@ -406,15 +514,15 @@ body {
 }
 
 .social-btn-tw {
-    background-position: 4px -404px;
+    background-position: 6px -406px;
 }
 
 .social-btn-fb {
-    background-position: 6px -30px;
+    background-position: 6px -32px;
 }
 
 .social-btn-yt {
-    background-position: 3px 8px;
+    background-position: 2px 7px;
 }
 
 /*.social-btn-tw:hover {
@@ -432,28 +540,35 @@ body {
 .footer-copyright {
     float: left;
     width: 400px;
+    height: 120px;
 }
 
 .footer-copyright p {
     font-size: 14px;
-    line-height: 85px;
+    line-height: 30px;
     font-weight: regular;
     font-family: "PT Sans", "Arial", sans-serif;
     text-align: right;
-    width: 180px;
+    width: 176px;
+    height: 30px;
     display: inline-block;
+    vertical-align: middle;
     margin: 0;
+    margin-top: 35px;
+    margin-right: 4px;
 }
 
 .footer-copyright a {
     background: url("../img/html-academy.png") no-repeat center;
     display: inline-block;
+    vertical-align: middle;
     width: 113px;
     height: 39px;
     text-decoration: none;
     font-size: 0;
     text-align: right;
     margin: 0;
+    margin-top: 40px;
 }
 
 .footer-copyright .btn:hover {
@@ -469,17 +584,29 @@ a {
 .blurry-sedona {
     background: #ffffff url("../img/blurry-sedona.jpg") no-repeat center;
     width: 1200px;
-    height: 220px;
+    height: 216px;
     position: relative;
+    display: block;
 }
 
 .filter {
-    /*margin: 0 auto;*/
     position: absolute;
-    top: 71px;
-    left: 105px;
+    top: 82px;
+    left: 136px;
     color: #ffffff;
-    padding-top: 20px;
+    min-height: 190px;
+}
+
+.infrastructure {
+    float: left;
+    width: 255px;
+    min-height: 185px;
+}
+
+.housing {
+    float: left;
+    width: 287px;
+    min-height: 185px;
 }
 
 .filter legend {
@@ -533,24 +660,12 @@ input[type="checkbox"]:checked + label::before {
     background-position: -10px -52px;
 }
 
-.infrastructure {
-    float: left;
-    width: 241px;
-    min-height: 215px;
-}
-
-.housing {
-    float: left;
-    width: 287px;
-    min-height: 215px;
-}
-
 .filter-range { 
     color: #ffffff;
     float: left;
     width: 330px;
     min-height: 215px;
-    margin-left: 200px;
+    margin-left: 198px;
 }
 
 .filter-range-title {
@@ -567,6 +682,7 @@ input[type="checkbox"]:checked + label::before {
     border: 2px solid #ffffff;
     border-radius: 2px;
     font-size: 0;
+    margin-left: 10px;
 }
 
 .price-controls::after {
@@ -605,6 +721,7 @@ input[type="checkbox"]:checked + label::before {
 .range-controls {
     position: relative;
     margin-bottom: 32px;
+    margin-left: 10px;
 }
 
 .range-controls .scale {
@@ -654,6 +771,7 @@ input[type="checkbox"]:checked + label::before {
     border: 2px solid #ffffff;
     border-radius: 2px;
     cursor: pointer;
+    width: 138px;
 }
 
 .btn-transparent:hover {
@@ -702,23 +820,25 @@ input[type="checkbox"]:checked + label::before {
     text-align: left;
     line-height: 18px;
     margin: 0;
-    padding-top: 40px;
+    padding-top: 37px;
+    margin-left: 4px;
 }
 
 .sorting-list {
     margin: 0;
-    padding-top: 40px;
+    padding: 0;
+    padding-top: 37px;
+    margin-left: 4px;
 }
 
 .sorting-list li {
     float: left;
-    width: 80px;
+    width: 82px;
     font-size: 12px;
     font-family: "PT Sans", "Arial", sans-serif; 
     color: #e0e0e0;
     line-height: 18px;
     list-style: none;
-    padding-right: 30px;
 }
 
 .sorting-list li:last-child {
@@ -737,25 +857,29 @@ input[type="checkbox"]:checked + label::before {
 
 .sorting-controls {
     float: right;
-    width: 110px;
+    width: 34px;
     margin: 0;
-    padding-top: 40px;
+    margin-left: 320px;
+    padding-top: 30px;
+    padding-left: 76px;
 }
 
 .arrow-ascending {
     background-image: url("../img/arrow-ascending.png");
     background-repeat: no-repeat;
     display: inline-block;
+    vertical-align: middle;
     width: 10px;
     height: 10px;
     padding: 0;
-    margin-left: 10px;
+    padding-right: 10px;
 }
 
 .arrow-descending-down {
     background-image: url("../img/arrow-descending-down.png");
     background-repeat: no-repeat;
     display: inline-block;
+    vertical-align: middle;
     width: 10px;
     height: 10px;
     padding: 0;
@@ -782,7 +906,7 @@ input[type="checkbox"]:checked + label::before {
     float: left;
     width: 650px;
     margin: 0;
-    padding-top: 32px;
+    padding-top: 28px;
 }
 
 .housing-item-title {
@@ -791,6 +915,7 @@ input[type="checkbox"]:checked + label::before {
     font-weight: bold;
     font-family: "PT Sans", "Arial", sans-serif; 
     text-decoration: none;
+    margin-left: 9px;
 }
 
 .housing-item-text {
@@ -798,7 +923,20 @@ input[type="checkbox"]:checked + label::before {
     line-height: 21px;
     font-weight: regular;
     font-family: "PT Sans", "Arial", sans-serif; 
+    margin-top: 5px;
+    margin-left: 8px;
 }
+
+.housing-item-text span {
+    margin-right: 35px;
+}
+
+.housing-item-btns {
+    margin: 0;
+    margin-top: 16px;
+    margin-left: 9px;
+}
+
 
 .item-btn-details {
     font-size: 14px;
@@ -806,25 +944,24 @@ input[type="checkbox"]:checked + label::before {
     font-weight: bold;
     font-family: "PT Sans", "Arial", sans-serif; 
     width: 110px;
-    height: 27px;
+    height: 26px;
     background-color: #81b3d2;
     color: #ffffff;
-    padding: 7px 17px;
-    margin-right: 7px;
+    padding: 5px 17px;
     text-align: center;
     text-decoration: none;
 }
 
 .item-btn-reservations {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 26px;
     font-weight: bold;
     font-family: "PT Sans", "Arial", sans-serif; 
     width: 110px;
-    height: 27px;
+    height: 26px;
     background-color: #766357;
     color: #ffffff;
-    padding: 7px 17px;
+    padding: 5px 17px;
     text-align: center;
     text-decoration: none;
 }
@@ -833,7 +970,7 @@ input[type="checkbox"]:checked + label::before {
     float: right;
     width: 110px;
     margin: 0;
-    padding-top: 32px;
+    padding-top: 26px;
 }
 
 .rating-stars>span {
@@ -841,6 +978,7 @@ input[type="checkbox"]:checked + label::before {
     width: 19px;
     height: 17px;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .rating-text {
@@ -853,4 +991,7 @@ input[type="checkbox"]:checked + label::before {
     background-color: #f2f2f2;
     color: #8b8b8b;
     text-align: center;
+    margin: 0;
+    margin-top: 46px;
+    margin-left: 5px;
 }
