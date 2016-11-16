@@ -75,7 +75,7 @@ body {
     color: #81b3d2;
 }
 
-.main-navigation a:focus {
+.main-navigation a:active {
     color: #b2b2b2;
 }
 
@@ -87,7 +87,7 @@ body {
     color: #604e43;
 }
 
-.main-navigation .active:focus {
+.main-navigation .active:active {
     color: #d6d0cc;
 }
 
@@ -148,7 +148,6 @@ body {
     font-size: 14px;
     line-height: 26px;
     font-weight: normal;
-    font-family: "PT Sans", "Arial", sans-serif;
     text-align: center;
     padding-top: 25px;
     margin: 0;
@@ -172,7 +171,6 @@ body {
 }
 
 .advantages-city-description h2 {
-    margin: 0;
     width: 130px;
     margin: 0 auto;
     padding-bottom: 23px;
@@ -209,8 +207,7 @@ body {
 }
 
 .comfort-item p {
-    margin: 0 auto;
-    margin-top: 13px;
+    margin: 13px auto 0 auto;
     width: 285px;
 }
 
@@ -271,14 +268,12 @@ body {
 }
 
 .advantages-bridge-description h2 {
-    margin: 0;
     padding-bottom: 23px;
     width: 160px;
     margin: 0 auto;
 }
 
 .advantages-bridge-description p {
-    margin: 0;
     padding-top: 21px;
     width: 305px;
     margin: 0 auto;
@@ -293,14 +288,12 @@ body {
 }
 
 .advantages-item h2 {
-    margin: 0;
     padding-bottom: 25px;
     width: 125px;
     margin: 0 auto;
 }
 
 .advantages-item p {
-    margin: 0;
     padding-top: 20px;
     width: 265px;
     margin: 0 auto;
@@ -323,7 +316,6 @@ body {
 .search-title {
     font-size: 30px;
     font-weight: bold;
-    font-family: "PT Sans", "Arial", sans-serif;
     color: #000000;
     text-align: center;
     margin: 0;
@@ -366,6 +358,7 @@ body {
     position: absolute;
     left: 50%;
     margin: 0 0 0 -284px;
+    z-index: 10; 
 }
 
 .form-show {
@@ -388,11 +381,9 @@ body {
   }
 }
 
-
 .data {
     width: 511px;
     min-height: 40px;
-    /*margin: 30px 60px 30px 60px;*/
     margin: 0;
     padding: 0;
     padding-top: 52px;
@@ -407,13 +398,13 @@ body {
     background: #f2f2f2;
     border: none;
     text-align: left;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
-    font-family: "PT Sans", "Arial", sans-serif;
     text-transform: uppercase;
-    background-image: url(../img/sprites.png);
-    background-position: -10px -220px;
+    background-image: url("../img/sprites.png");
+    background-position: 306px -220px;
     background-repeat: no-repeat;
 }
 
@@ -425,8 +416,8 @@ body {
 
 .date-input:hover {
     background: #ebebeb;
-    background-image: url(../img/sprites.png);
-    background-position: -10px -304px;
+    background-image: url("../img/sprites.png");
+    background-position: 306px -304px;
     background-repeat: no-repeat;
 }
 
@@ -435,8 +426,8 @@ body {
     height: 34px;
     background: #ffffff;
     border: 2px solid #e5e5e5;
-    background-image: url(../img/sprites.png);
-    background-position: -10px -262px;
+    background-image: url("../img/sprites.png");
+    background-position: 306px -262px;
     background-repeat: no-repeat;
 }
 
@@ -448,20 +439,20 @@ body {
     background: #f2f2f2;
     border: none;
     text-align: left;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
-    font-family: "PT Sans", "Arial", sans-serif;
     text-transform: uppercase;
-    background-image: url(../img/sprites.png);
-    background-position: -10px -220px;
+    background-image: url("../img/sprites.png");
+    background-position: 306px -220px;
     background-repeat: no-repeat;
 }
 
 .date-out:hover {
     background: #ebebeb;
-    background-image: url(../img/sprites.png);
-    background-position: -10px -304px;
+    background-image: url("../img/sprites.png");
+    background-position: 306px -304px;
     background-repeat: no-repeat;
 }
 
@@ -470,8 +461,8 @@ body {
     height: 34px;
     background: #ffffff;
     border: 2px solid #e5e5e5;
-    background-image: url(../img/sprites.png);
-    background-position: -10px -262px;
+    background-image: url("../img/sprites.png");
+    background-position: 306px -262px;
     background-repeat: no-repeat;
 }
 
@@ -490,7 +481,6 @@ body {
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
-    font-family: "PT Sans", "Arial", sans-serif;
     vertical-align: middle;
     margin-right: 40px;
 }
@@ -510,7 +500,6 @@ body {
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
-    font-family: "PT Sans", "Arial", sans-serif;
     vertical-align: middle;
     margin-right: 28px;
 }
@@ -540,7 +529,6 @@ body {
     padding: 0;
     text-align: right;
     font-weight: bold;
-    font-family: "PT Sans", "Arial", sans-serif;
     text-transform: uppercase;
 }
 
@@ -565,7 +553,6 @@ body {
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
-    font-family: "PT Sans", "Arial", sans-serif;
     display: inline-block;
     vertical-align: middle;
 }
@@ -586,13 +573,10 @@ body {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    font-family: "PT Sans", "Arial", sans-serif;
     text-align: center;
-    margin: 0;
+    margin: 51px 0 0 55px;
     text-transform: uppercase;
     border: none;
-    margin-left: 55px;
-    margin-top: 51px;
 }
 
 .find:hover {
@@ -628,7 +612,6 @@ body {
     font-size: 21px;
     line-height: 85px;
     font-weight: bold;
-    font-family: "PT Sans", "Arial", sans-serif;
     text-align: center;
     padding-top: 15px;
 }
@@ -649,8 +632,7 @@ body {
     vertical-align: middle;
     width: 46px;
     height: 48px;
-    margin: 0 2px;
-    margin-top: 35px;
+    margin: 35px 2px 0 2px;
     background: #81b3d2 url("../img/sprite.png") no-repeat center;
     font-size: 0;
     text-align: center;
@@ -673,19 +655,19 @@ body {
     background-color: #669ec0;
 }
 
-.social-btn:focus {
+.social-btn:active {
     background-color: #5496bd url("../img/sprites.png") no-repeat center; 
 }
 
-.social-btn-tw:focus {
+.social-btn-tw:active {
     background-position: -10px -587px;
 }
 
-.social-btn-fb:focus {
+.social-btn-fb:active {
     background-position: -10px -430px;
 }
 
-.social-btn-yt:focus {
+.social-btn-yt:active {
     background-position: -10px -622px;
 }
 
@@ -699,15 +681,12 @@ body {
     font-size: 14px;
     line-height: 30px;
     font-weight: regular;
-    font-family: "PT Sans", "Arial", sans-serif;
     text-align: right;
     width: 176px;
     height: 30px;
     display: inline-block;
     vertical-align: middle;
-    margin: 0;
-    margin-top: 35px;
-    margin-right: 4px;
+    margin: 35px 4px 0 0;
 }
 
 .footer-copyright a {
@@ -719,8 +698,7 @@ body {
     text-decoration: none;
     font-size: 0;
     text-align: right;
-    margin: 0;
-    margin-top: 40px;
+    margin: 40px 0 0 0;
 }
 
 .footer-copyright a:hover {
@@ -744,39 +722,31 @@ a {
     color: #000000;
 }
 
-.blurry-sedona {
-    background: #ffffff url("../img/blurry-sedona.jpg") no-repeat center;
-    width: 1200px;
-    height: 216px;
-    position: relative;
-    display: block;
-}
-
 .filter {
-    position: absolute;
-    top: 82px;
-    left: 136px;
+    background: #ffffff url("../img/blurry-sedona.jpg") no-repeat center;
     color: #ffffff;
-    min-height: 190px;
+    width: 1200px;
+    min-height: 216px;
 }
 
 .infrastructure {
     float: left;
     width: 255px;
     min-height: 190px;
+    margin: 26px 0 0 61px;
 }
 
 .housing {
     float: left;
     width: 287px;
     min-height: 190px;
+    margin-top: 26px;
 }
 
 .filter legend {
     font-size: 16px;
     line-height: 21px;
     font-weight: bold;
-    font-family: "PT Sans", "Arial", sans-serif;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -800,7 +770,6 @@ input[type="checkbox"] + label {
     font-size: 14px;
     line-height: 21px; 
     font-weight: regular;
-    font-family: "PT Sans", "Arial", sans-serif;
     text-align: left;
     display: inline-block;
     vertical-align: top;
@@ -823,9 +792,14 @@ input[type="checkbox"]:checked + label::before {
     background-position: -10px -52px;
 }
 
-input[type="checkbox"]:disabled + label::before {
+input[type="checkbox"] + label:hover::before {
     background: url("../img/sprites.png") no-repeat;
     background-position: -10px -346px;
+}
+
+input[type="checkbox"]:checked + label:hover::before {
+    background: url("../img/sprites.png") no-repeat;
+    background-position: -10px -388px;
 }
 
 .filter-range { 
@@ -833,7 +807,7 @@ input[type="checkbox"]:disabled + label::before {
     float: left;
     width: 330px;
     min-height: 215px;
-    margin-left: 198px;
+    margin: 26px 0 0 198px;
 }
 
 .filter-range-title {
@@ -847,10 +821,10 @@ input[type="checkbox"]:disabled + label::before {
     position: relative;
     height: 36px;
     margin-bottom: 20px;
+    margin-left: 10px;
     border: 2px solid #ffffff;
     border-radius: 2px;
     font-size: 0;
-    margin-left: 10px;
 }
 
 .price-controls::after {
@@ -970,7 +944,6 @@ input[type="checkbox"]:disabled + label::before {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    font-family: "PT Sans", "Arial", sans-serif;
     text-align: left;
     margin: 0;
     padding-top: 30px;
@@ -980,7 +953,6 @@ input[type="checkbox"]:disabled + label::before {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .sorting {
@@ -988,26 +960,22 @@ input[type="checkbox"]:disabled + label::before {
     width: 110px;
     font-size: 12px;
     font-weight: regular;
-    font-family: "PT Sans", "Arial", sans-serif;
     text-align: left;
     line-height: 18px;
-    margin: 0;
+    margin: 0 0 0 4px;
     padding-top: 37px;
-    margin-left: 4px;
 }
 
 .sorting-list {
-    margin: 0;
+    margin: 0 0 0 4px;
     padding: 0;
     padding-top: 37px;
-    margin-left: 4px;
 }
 
 .sorting-list li {
     float: left;
     width: 82px;
     font-size: 12px;
-    font-family: "PT Sans", "Arial", sans-serif; 
     color: #e0e0e0;
     line-height: 18px;
     list-style: none;
@@ -1040,8 +1008,7 @@ input[type="checkbox"]:disabled + label::before {
 .sorting-controls {
     float: right;
     width: 34px;
-    margin: 0;
-    margin-left: 320px;
+    margin: 0 0 0 100px;
     padding-top: 30px;
     padding-left: 76px;
 }
@@ -1122,7 +1089,6 @@ input[type="checkbox"]:disabled + label::before {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    font-family: "PT Sans", "Arial", sans-serif; 
     text-decoration: none;
     margin-left: 9px;
 }
@@ -1138,8 +1104,7 @@ input[type="checkbox"]:disabled + label::before {
 .housing-item-text {
     font-size: 14px;
     line-height: 21px;
-    font-weight: regular;
-    font-family: "PT Sans", "Arial", sans-serif; 
+    font-weight: regular; 
     margin-top: 5px;
     margin-left: 8px;
 }
@@ -1149,16 +1114,13 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .housing-item-btns {
-    margin: 0;
-    margin-top: 16px;
-    margin-left: 9px;
+    margin: 16px 0 0 9px;
 }
 
 .item-btn-details {
     font-size: 14px;
     line-height: 21px;
     font-weight: bold;
-    font-family: "PT Sans", "Arial", sans-serif; 
     width: 110px;
     height: 26px;
     background-color: #81b3d2;
@@ -1180,8 +1142,7 @@ input[type="checkbox"]:disabled + label::before {
 .item-btn-reservations {
     font-size: 14px;
     line-height: 26px;
-    font-weight: bold;
-    font-family: "PT Sans", "Arial", sans-serif; 
+    font-weight: bold; 
     width: 110px;
     height: 26px;
     background-color: #766357;
@@ -1207,7 +1168,7 @@ input[type="checkbox"]:disabled + label::before {
     padding-top: 26px;
 }
 
-.rating-stars>span {
+.rating-stars > span {
     background-image: url("../img/stars.png");
     width: 19px;
     height: 17px;
@@ -1216,20 +1177,17 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .rating-stars {
-    text-align-last: right;
+    text-align: right;
 }
 
 .rating-text {
     font-size: 14px;
     font-weight: regular;
-    font-family: "PT Sans", "Arial", sans-serif;
     width: 110px;
     height: 27px;
     line-height: 27px;
     background-color: #f2f2f2;
     color: #8b8b8b;
     text-align: center;
-    margin: 0;
-    margin-top: 46px;
-    margin-left: 5px;
+    margin: 46px 0 0 5px;
 }
