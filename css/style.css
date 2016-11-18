@@ -354,7 +354,7 @@ body {
     width: 568px;
     height: 394px;
     background: #ffffff;
-    /*display: none;*/
+    display: none;
     position: absolute;
     left: 50%;
     margin: 0 0 0 -284px;
@@ -527,9 +527,13 @@ body {
     border: none;
     margin: 0;
     padding: 0;
-    text-align: right;
+    text-align: center;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
+    -webkit-appearance: none; margin: 0px;
 }
 
 .reservation-plus {
@@ -588,11 +592,11 @@ body {
     color: #88b6d1;
 }
 
-/*.map {
+.map {
     background: #ffffff url("../img/map.jpg") no-repeat center;
     width: 1200px;
     height: 472px;
-}*/
+}
 
 .main-footer {
     background: #ffffff;
@@ -655,20 +659,19 @@ body {
     background-color: #669ec0;
 }
 
-.social-btn:active {
-    background-color: #5496bd url("../img/sprites.png") no-repeat center; 
-}
-
 .social-btn-tw:active {
-    background-position: -10px -587px;
+    background: #5496bd url("../img/sprites.png") no-repeat center; 
+    background-position: 4px -570px;
 }
 
 .social-btn-fb:active {
-    background-position: -10px -430px;
+    background: #5496bd url("../img/sprites.png") no-repeat center;
+    background-position: 6px -416px;
 }
 
 .social-btn-yt:active {
-    background-position: -10px -622px;
+    background: #5496bd url("../img/sprites.png") no-repeat center;
+    background-position: 3px -606px;
 }
 
 .footer-copyright {
@@ -806,7 +809,7 @@ input[type="checkbox"]:checked + label:hover::before {
     color: #ffffff;
     float: left;
     width: 330px;
-    min-height: 215px;
+    /*min-height: 215px;*/
     margin: 26px 0 0 198px;
 }
 
