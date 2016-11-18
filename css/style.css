@@ -189,7 +189,6 @@ body {
 }
 
 .comfort {
-    height: 330px;
     width: 1200px;
     background-color: #ffffff;
 }
@@ -404,8 +403,9 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     background-image: url("../img/sprites.png");
-    background-position: 306px -220px;
+    background-position: 306px -210px;
     background-repeat: no-repeat;
+    outline: none;
 }
 
 .data:nth-child(2) {
@@ -445,8 +445,9 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     background-image: url("../img/sprites.png");
-    background-position: 306px -220px;
+    background-position: 306px -210px;
     background-repeat: no-repeat;
+    outline: none;
 }
 
 .date-out:hover {
@@ -551,11 +552,13 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
 }
 
 .reservation-minus a, .reservation-plus a {
+    width: 100%;
+    height: 100%;
     text-decoration: none;
     color: #a9a9a9;
     text-align: center;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 38px;
     font-weight: bold;
     display: inline-block;
     vertical-align: middle;
@@ -661,7 +664,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
 
 .social-btn-tw:active {
     background: #5496bd url("../img/sprites.png") no-repeat center; 
-    background-position: 4px -570px;
+    background-position: 5px -571px;
 }
 
 .social-btn-fb:active {
@@ -671,7 +674,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
 
 .social-btn-yt:active {
     background: #5496bd url("../img/sprites.png") no-repeat center;
-    background-position: 3px -606px;
+    background-position: 2px -605px;
 }
 
 .footer-copyright {
@@ -971,13 +974,12 @@ input[type="checkbox"]:checked + label:hover::before {
 
 .sorting-list {
     margin: 0 0 0 4px;
-    padding: 0;
-    padding-top: 37px;
+    padding: 37px 0 0 0;
 }
 
 .sorting-list li {
     float: left;
-    width: 82px;
+    margin-right: 33px;
     font-size: 12px;
     color: #e0e0e0;
     line-height: 18px;
@@ -1066,7 +1068,7 @@ input[type="checkbox"]:checked + label:hover::before {
 
 .housing-item {
     width: 1052px;
-    min-height: 150px;
+    /*min-height: 150px;*/
     padding-left: 72px;
     padding-right: 76px;
     background-color: #ffffff;
