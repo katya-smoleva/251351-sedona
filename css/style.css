@@ -95,7 +95,7 @@ body {
 .welcome {
     width: 1200px;
     min-height: 510px;
-    background: #355d80 url("../img/background-sedona.jpg") no-repeat center;
+    background: #355d80 url("../img/backgroundsedona.jpg") no-repeat center;
     background-position-y: -54px;
     text-align: center;
 }
@@ -419,7 +419,7 @@ body {
 .date-input:hover {
     background: #ebebeb;
     background-image: url("../img/sprites.png");
-    background-position: 306px -304px;
+    background-position: 306px -294px;
     background-repeat: no-repeat;
 }
 
@@ -429,7 +429,7 @@ body {
     background: #ffffff;
     border: 2px solid #e5e5e5;
     background-image: url("../img/sprites.png");
-    background-position: 306px -262px;
+    background-position: 306px -254px;
     background-repeat: no-repeat;
 }
 
@@ -455,7 +455,7 @@ body {
 .date-out:hover {
     background: #ebebeb;
     background-image: url("../img/sprites.png");
-    background-position: 306px -304px;
+    background-position: 306px -294px;
     background-repeat: no-repeat;
 }
 
@@ -465,7 +465,7 @@ body {
     background: #ffffff;
     border: 2px solid #e5e5e5;
     background-image: url("../img/sprites.png");
-    background-position: 306px -262px;
+    background-position: 306px -254px;
     background-repeat: no-repeat;
 }
 
@@ -605,7 +605,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
 }
 
 .main-footer {
-    background: #ffffff;
+    background: rgba(255,255,255,0.9);
     width: 1200px;
     position: absolute;
     bottom: 0;
