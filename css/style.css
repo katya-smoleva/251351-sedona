@@ -15,6 +15,7 @@ body {
     width: 1200px;
     margin: 0 auto;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
+    position: relative;
 }
 
 .clearfix::after {
@@ -154,14 +155,14 @@ body {
 }
 
 .advantages {
-    height: 256px;
+    min-height: 256px;
     background-color: #eeeeee; 
 }
 
 .advantages-city-description {
     float: left;
     width: 400px;
-    height: 201px; 
+    min-height: 203px; 
     text-align: center;
     background-color: #81b3d2;
     color: #ffffff;
@@ -190,6 +191,7 @@ body {
 
 .comfort {
     width: 1200px;
+    min-height: 330px;
     background-color: #ffffff;
 }
 
@@ -258,7 +260,7 @@ body {
 .advantages-bridge-description {
     float: left;
     width: 400px;
-    height: 203px;
+    min-height: 203px;
     text-align: center;
     background-color: #81b3d2;
     color: #ffffff;
@@ -557,7 +559,8 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
     text-decoration: none;
     color: #a9a9a9;
     text-align: center;
-    font-size: 14px;
+    font-family: "symbols";
+    font-size: 20px;
     line-height: 38px;
     font-weight: bold;
     display: inline-block;
@@ -598,12 +601,15 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
 .map {
     background: #ffffff url("../img/map.jpg") no-repeat center;
     width: 1200px;
-    height: 472px;
+    height: 592px;
 }
 
 .main-footer {
     background: #ffffff;
     width: 1200px;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
 }
 
 .footer-contacts {
@@ -686,7 +692,6 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
 .footer-copyright p {
     font-size: 14px;
     line-height: 30px;
-    font-weight: regular;
     text-align: right;
     width: 176px;
     height: 30px;
@@ -775,7 +780,6 @@ input[type="checkbox"] + label {
     padding-left: 40px;
     font-size: 14px;
     line-height: 21px; 
-    font-weight: regular;
     text-align: left;
     display: inline-block;
     vertical-align: top;
@@ -965,7 +969,6 @@ input[type="checkbox"]:checked + label:hover::before {
     float: left;
     width: 110px;
     font-size: 12px;
-    font-weight: regular;
     text-align: left;
     line-height: 18px;
     margin: 0 0 0 4px;
@@ -1005,7 +1008,7 @@ input[type="checkbox"]:checked + label:hover::before {
     color: #81b3d2;
 }
 
-.sorting-list a:focus {
+.sorting-list a:active {
     color: #000000;
     border-bottom: none;
 }
@@ -1108,8 +1111,7 @@ input[type="checkbox"]:checked + label:hover::before {
 
 .housing-item-text {
     font-size: 14px;
-    line-height: 21px;
-    font-weight: regular; 
+    line-height: 21px; 
     margin-top: 5px;
     margin-left: 8px;
 }
@@ -1187,7 +1189,6 @@ input[type="checkbox"]:checked + label:hover::before {
 
 .rating-text {
     font-size: 14px;
-    font-weight: regular;
     width: 110px;
     height: 27px;
     line-height: 27px;
