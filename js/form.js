@@ -27,6 +27,7 @@ form.addEventListener("submit", function(event) {
         localStorage.setItem("adults", adults.value);
     }
 });
+
 window.addEventListener("keydown", function(event) {
     if (event.keyCode === 27) {
         if (popup.classList.contains("form-show")) {

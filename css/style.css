@@ -155,19 +155,19 @@ body {
 }
 
 .advantages {
-    min-height: 256px;
+    height: 256px;
     background-color: #eeeeee; 
 }
 
 .advantages-city-description {
     float: left;
     width: 400px;
-    min-height: 203px; 
+    min-height: 193px; 
     text-align: center;
     background-color: #81b3d2;
     color: #ffffff;
     margin: 0;
-    padding-top: 53px;
+    padding: 53px 0 10px 0;
     line-height: 21px;
 }
 
@@ -200,6 +200,7 @@ body {
     width: 400px;
     margin-top: 157px;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .comfort-item h2 {
@@ -260,12 +261,12 @@ body {
 .advantages-bridge-description {
     float: left;
     width: 400px;
-    min-height: 203px;
+    min-height: 193px;
     text-align: center;
     background-color: #81b3d2;
     color: #ffffff;
     line-height: 21px;
-    padding-top: 53px;
+    padding: 53px 0 10px 0;
 }
 
 .advantages-bridge-description h2 {
@@ -554,25 +555,39 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
 }
 
 .reservation-minus a, .reservation-plus a {
+    display: inline-block;
+    vertical-align: middle;
     width: 100%;
     height: 100%;
     text-decoration: none;
     color: #a9a9a9;
-    text-align: center;
-    font-family: "symbols";
-    font-size: 20px;
-    line-height: 38px;
-    font-weight: bold;
-    display: inline-block;
-    vertical-align: middle;
+    font-size: 0;
 }
 
-.reservation-minus a:hover, .reservation-plus a:hover {
-    color: #000000;
+.reservation-minus a {
+    background: url("../img/sprites.png") no-repeat center;
+    background-position: 5px -569px;
 }
 
-.reservation-minus a:focus, .reservation-plus a:focus {
-    color: #81b3d2;
+.reservation-plus a {
+    background: url("../img/sprites.png") no-repeat center;
+    background-position: 0px -642px;
+}
+
+.reservation-minus a:hover {
+    background-position: 5px -615px;
+}
+
+.reservation-plus a:hover {
+    background-position: 0px -704px;
+}
+
+.reservation-minus a:active {
+    background-position: 5px -592px;
+}
+
+.reservation-plus a:active {
+    background-position: 0px -673px;
 }
 
 .find {
@@ -610,6 +625,11 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
     position: absolute;
     bottom: 0;
     z-index: 10;
+}
+
+.main-footer-hotels {
+    background: #ffffff;
+    width: 1200px;
 }
 
 .footer-contacts {
@@ -670,7 +690,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
 
 .social-btn-tw:active {
     background: #5496bd url("../img/sprites.png") no-repeat center; 
-    background-position: 5px -571px;
+    background-position: 6px -733px;
 }
 
 .social-btn-fb:active {
@@ -680,7 +700,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
 
 .social-btn-yt:active {
     background: #5496bd url("../img/sprites.png") no-repeat center;
-    background-position: 2px -605px;
+    background-position: 2px -767px;
 }
 
 .footer-copyright {
@@ -803,13 +823,15 @@ input[type="checkbox"]:checked + label::before {
 }
 
 input[type="checkbox"] + label:hover::before {
-    background: url("../img/sprites.png") no-repeat;
-    background-position: -10px -346px;
+    /*background: url("../img/sprites.png") no-repeat;
+    background-position: -10px -346px;*/
+    opacity: 0.3;
 }
 
 input[type="checkbox"]:checked + label:hover::before {
-    background: url("../img/sprites.png") no-repeat;
-    background-position: -10px -388px;
+    /*background: url("../img/sprites.png") no-repeat;
+    background-position: -10px -388px;*/
+    opacity: 0.3;
 }
 
 .filter-range { 
@@ -1069,9 +1091,16 @@ input[type="checkbox"]:checked + label:hover::before {
     background-position: -10px -10px;
 }
 
+hr {
+    margin: 0;
+    border: none;
+    background-color: #e5e5e5;
+    height: 1px;
+}
+
 .housing-item {
     width: 1052px;
-    /*min-height: 150px;*/
+    min-height: 150px;
     padding-left: 72px;
     padding-right: 76px;
     background-color: #ffffff;
@@ -1082,7 +1111,7 @@ input[type="checkbox"]:checked + label:hover::before {
     width: 135px;
     height: 90px;
     margin: 0;
-    padding-top: 32px;
+    padding-top: 29px;
     padding-right: 22px;
 } 
 
@@ -1090,7 +1119,7 @@ input[type="checkbox"]:checked + label:hover::before {
     float: left;
     width: 650px;
     margin: 0;
-    padding-top: 28px;
+    padding-top: 24px;
 }
 
 .housing-item-title {
@@ -1121,7 +1150,7 @@ input[type="checkbox"]:checked + label:hover::before {
 }
 
 .housing-item-btns {
-    margin: 16px 0 0 9px;
+    margin: 14px 0 0 9px;
 }
 
 .item-btn-details {
