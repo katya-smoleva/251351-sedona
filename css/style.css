@@ -823,14 +823,10 @@ input[type="checkbox"]:checked + label::before {
 }
 
 input[type="checkbox"] + label:hover::before {
-    /*background: url("../img/sprites.png") no-repeat;
-    background-position: -10px -346px;*/
     opacity: 0.3;
 }
 
 input[type="checkbox"]:checked + label:hover::before {
-    /*background: url("../img/sprites.png") no-repeat;
-    background-position: -10px -388px;*/
     opacity: 0.3;
 }
 
@@ -838,7 +834,6 @@ input[type="checkbox"]:checked + label:hover::before {
     color: #ffffff;
     float: left;
     width: 330px;
-    /*min-height: 215px;*/
     margin: 26px 0 0 198px;
 }
 
@@ -860,14 +855,15 @@ input[type="checkbox"]:checked + label:hover::before {
 }
 
 .price-controls::after {
+    -webkit-transform: rotate(-50deg, -50deg); 
     content: "";
     position: absolute;
-    top: 50%;
+    top: 23%;
     left: 50%;
     width: 2px;
     height: 22px;
     background: #ffffff;
-    transform: translate(-50%, -50%);
+    /*transform: translate(-50%, -50%);*/
 }
 
 .price-controls label {
@@ -963,6 +959,7 @@ input[type="checkbox"]:checked + label:hover::before {
     padding-left: 72px;
     padding-right: 76px;
     background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .results ul {
@@ -1091,19 +1088,13 @@ input[type="checkbox"]:checked + label:hover::before {
     background-position: -10px -10px;
 }
 
-hr {
-    margin: 0;
-    border: none;
-    background-color: #e5e5e5;
-    height: 1px;
-}
-
 .housing-item {
     width: 1052px;
     min-height: 150px;
     padding-left: 72px;
     padding-right: 76px;
     background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .photo {
