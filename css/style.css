@@ -439,7 +439,6 @@ body {
     height: 38px;
     margin-left: 15px;
     padding-left: 14px;
-    background: #f2f2f2;
     border: none;
     text-align: left;
     font-family: "PT Sans", "Arial", sans-serif;
@@ -447,6 +446,7 @@ body {
     line-height: 26px;
     font-weight: bold;
     text-transform: uppercase;
+    background-color: #f2f2f2;
     background-image: url("../img/sprites.png");
     background-position: 306px -210px;
     background-repeat: no-repeat;
