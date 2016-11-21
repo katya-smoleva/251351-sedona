@@ -155,7 +155,7 @@ body {
 }
 
 .advantages {
-    height: 256px;
+    min-height: 256px;
     background-color: #eeeeee; 
 }
 
@@ -186,7 +186,7 @@ body {
 .advantages-city-img {
     float: left;
     width: 800px;
-    height: 100%; 
+    height: 256px; 
 }
 
 .comfort {
@@ -255,7 +255,7 @@ body {
 .advantages-bridge-img {
     float: left;
     width: 800px;
-    height: 100%; 
+    height: 256px; 
 }
 
 .advantages-bridge-description {
@@ -303,7 +303,7 @@ body {
 
 .search {
     width: 1200px;
-    height: 291px;
+    min-height: 291px;
     text-align: center;
     margin: 0 auto;
     background-color: #ffffff;
@@ -312,7 +312,7 @@ body {
 .search-hotel {
     position: relative;
     padding-top: 53px;
-    height: 238px;
+    min-height: 238px;
 }
 
 .search-title {
@@ -823,10 +823,18 @@ input[type="checkbox"]:checked + label::before {
 }
 
 input[type="checkbox"] + label:hover::before {
-    opacity: 0.3;
+    opacity: 0.8;
 }
 
 input[type="checkbox"]:checked + label:hover::before {
+    opacity: 0.8;
+}
+
+input[type="checkbox"] + label:disabled::before {
+    opacity: 0.3;
+}
+
+input[type="checkbox"]:checked + label:disabled::before {
     opacity: 0.3;
 }
 
@@ -883,7 +891,7 @@ input[type="checkbox"]:checked + label:hover::before {
     width: 50px; 
     margin: 0;
     color: inherit;
-    font: inherit;
+    font-family: "PT Sans", "Arial", sans-serif;
     background: none;
     border: none;
 }
