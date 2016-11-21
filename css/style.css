@@ -830,7 +830,7 @@ input[type="checkbox"]:checked + label:hover::before {
     opacity: 0.8;
 }
 
-input[type="checkbox"]:disabled + label:hover::before {
+input[type="checkbox"]:disabled + label::before {
     opacity: 0.3;
 }
 
